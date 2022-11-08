@@ -3,6 +3,7 @@ font-family: 'Titillium Web', sans-serif; */
 
 :root {
   font-size: 0.875rem;
+  font-family: "Poppins", sans-serif;
   --blue: #0d6efd;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -13,9 +14,10 @@ font-family: 'Titillium Web', sans-serif; */
   --green: #198754;
   --teal: #20c997;
   --cyan: #0dcaf0;
+  --dark: #292a2b;
   --black: #000;
-  --greypre: #f2f2f2;
-  --lightblue: #47d3e5;
+  --white: #fff;
+  --yellowHack: #ffc311;
   box-sizing: border-box;
 }
 
@@ -29,30 +31,131 @@ font-family: 'Titillium Web', sans-serif; */
   outline: 0 none;
 }
 
+header > h3 {
+  display: inline-block;
+  margin-top: 0.8em;
+  margin-left: 1em;
+  font-size: 1.8em;
+  font-family: "Titillium Web", sans-serif;
+}
+header > h3 > span.span-yellow > h3 {
+  display: inline-block;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1em !important;
+  color: var(--yellowHack);
+}
+header > nav > div.toggle-menu {
+  width: 50px;
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  cursor: pointer;
+}
+header > nav > div > img.icon-menu {
+  width: 100%;
+  background-color: var(--dark);
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
 
+header > nav.main-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header > nav > div.main-menu {
+  position: fixed;
+  width: 70%;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: var(--dark);
+  transition: transform 0.3s;
+  transform: translateY(-100%);
+}
+header > nav > div.main-menu-show {
+  transform: translateY(0);
+}
+header > nav > div > div.close-menu {
+  width: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 1.5em;
+  margin-right: 1em;
+  cursor: pointer;
+}
+header > nav > div > div.close-menu > img.icon-close-menu {
+  position: static;
+  width: 100%;
+  background-color: var(--dark);
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+
+header > nav.main-nav > div.main-menu > .icons-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header > nav.main-nav > div.main-menu > ul.icons-menu > li {
+  list-style: none;
+  margin-top: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+header > nav.main-nav > div.main-menu > ul.icons-menu > li > a {
+  text-decoration: none;
+  color: var(--white);
+}
+header > nav.main-nav > div.main-menu > ul.links-menu {
+  list-style: none;
+  margin-top: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+header > nav.main-nav > div.main-menu > ul.links-menu > li {
+  margin-top: 2em;
+  border-bottom: 1px solid var(--white);
+}
+header > nav.main-nav > div.main-menu > ul.links-menu > li > a {
+  text-decoration: none;
+  color: var(--white);
+}
 
 /* Bootstrap breakpoints */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  /* here your code */
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  /* here your code */
+  header > nav.main-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-items: center;
+  }
+  
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  /* here your code */
-}
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  /* here your code */
-}
-
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-  /* here your code */
+  header > nav > div.main-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  header > nav.main-nav > div.main-menu > ul.icons-menu > li > a {
+    text-decoration: none;
+    color: var(--black);
+  }
+  header > nav > div.toggle-menu {
+    display: none;
+  }
 }
