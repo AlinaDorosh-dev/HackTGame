@@ -74,10 +74,10 @@ header > nav > div.main-menu {
   align-items: left;
   background-color: var(--dark);
   transition: transform 0.3s;
-  transform: translateY(-100%);
+  transform: translateX(100%);
 }
 header > nav > div.main-menu-show {
-  transform: translateY(0);
+  transform: translateX(0);
 }
 header > nav > div > div.close-menu {
   width: 50px;
@@ -105,9 +105,7 @@ header > nav.main-nav > div.main-menu > .icons-menu {
 
 header > nav.main-nav > div.main-menu > ul.icons-menu > li {
   list-style: none;
-  margin-top: 2em;
-  margin-left: 1em;
-  margin-right: 1em;
+  margin: 2em 1em 0;
 }
 header > nav.main-nav > div.main-menu > ul.icons-menu > li > a {
   text-decoration: none;
@@ -115,9 +113,7 @@ header > nav.main-nav > div.main-menu > ul.icons-menu > li > a {
 }
 header > nav.main-nav > div.main-menu > ul.links-menu {
   list-style: none;
-  margin-top: 2em;
-  margin-left: 1em;
-  margin-right: 1em;
+  margin: 2em 1em 0;
 }
 header > nav.main-nav > div.main-menu > ul.links-menu > li {
   margin-top: 2em;
@@ -129,16 +125,15 @@ header > nav.main-nav > div.main-menu > ul.links-menu > li > a {
 }
 
 /* Bootstrap breakpoints */
-/* Small devices (landscape phones, 576px and up) */
+/* Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-}
+} */
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   header > nav.main-nav {
     display: flex;
     flex-direction: row;
-    align-items: center;
     align-items: center;
   }
   
