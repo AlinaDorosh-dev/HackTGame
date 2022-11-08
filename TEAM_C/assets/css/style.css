@@ -3,6 +3,7 @@ font-family: 'Titillium Web', sans-serif; */
 
 :root {
   font-size: 0.875rem;
+  font-family: "Poppins", sans-serif;
   --blue: #0d6efd;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -13,9 +14,10 @@ font-family: 'Titillium Web', sans-serif; */
   --green: #198754;
   --teal: #20c997;
   --cyan: #0dcaf0;
+  --dark: #292a2b;
   --black: #000;
-  --greypre: #f2f2f2;
-  --lightblue: #47d3e5;
+  --white: #fff;
+  --yellowHack: #ffc311;
   box-sizing: border-box;
 }
 
@@ -29,7 +31,32 @@ font-family: 'Titillium Web', sans-serif; */
   outline: 0 none;
 }
 
-
+#footer {
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+}
+#footer > h2 {
+  font-family: "Titillium Web", sans-serif;
+}
+#footer > h3 {
+  font-family: "Poppins", sans-serif;
+}
+#footer > h2 > span:nth-child(1) {
+  color: var(--white);
+}
+#footer > h2 > span:nth-child(2) {
+  color: var(--yellowHack);
+}
+#footer > h3 > span:nth-child(1) {
+  color: var(--white);
+}
+#footer > h3 > span:nth-child(2) {
+  color: var(--yellowHack);
+  text-decoration: underline;
+}
 
 /* Bootstrap breakpoints */
 /* Small devices (landscape phones, 576px and up) */
