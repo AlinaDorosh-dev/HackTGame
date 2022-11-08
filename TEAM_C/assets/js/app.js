@@ -8,12 +8,19 @@ window.addEventListener("load", ()=>{
             element.nextElementSibling.classList.add("gamers-player1-h3-hide");
             element.nextElementSibling.nextElementSibling.classList.remove("gamers-plus");
             element.nextElementSibling.nextElementSibling.classList.add("gamers-plus-ye");
-            console.log(element.nextElementSibling.nextElementSibling);
+        });
+        element.addEventListener("mouseleave", ()=>{
+            element.classList.remove("gamers-img-player1-2");
+            element.classList.add("gamers-img-player1");
+            element.nextElementSibling.classList.remove("gamers-player1-h3-hide");
+            element.nextElementSibling.classList.add("gamers-player1-h3");
+            element.nextElementSibling.nextElementSibling.classList.remove("gamers-plus-ye");
+            element.nextElementSibling.nextElementSibling.classList.add("gamers-plus");
         });
     });
     let gamer_plus = document.querySelectorAll(".gamers-plus");
     gamer_plus.forEach(element =>{
-        element.addEventListener("mouseover", (player)=>{
+        element.addEventListener("mouseover", ()=>{
             element.classList.remove("gamer-plus-ye");
             element.classList.add("gamer-plus-wh");
         });
