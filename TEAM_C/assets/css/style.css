@@ -3,6 +3,7 @@ font-family: 'Titillium Web', sans-serif; */
 
 :root {
   font-size: 0.875rem;
+  font-family: 'Poppins', sans-serif;
   --blue: #0d6efd;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -13,9 +14,9 @@ font-family: 'Titillium Web', sans-serif; */
   --green: #198754;
   --teal: #20c997;
   --cyan: #0dcaf0;
+  --dark: #292a2b;
   --black: #000;
-  --greypre: #f2f2f2;
-  --lightblue: #47d3e5;
+  --white: #fff;
   box-sizing: border-box;
 }
 
@@ -28,7 +29,71 @@ font-family: 'Titillium Web', sans-serif; */
   box-sizing: inherit;
   outline: 0 none;
 }
-
+#gamers{
+  margin: 5%;
+}
+#gamers-h2{
+  font-family: 'Titillium Web', sans-serif;
+  color: var(--dark);
+  font-size: 3em;
+  line-height: 1em;
+}
+#gamers-yellow{
+  color: var(--yellow);
+}
+#gamers-p{
+  margin-top: 1em;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 2em;
+  width: 100%;
+}
+/*--------------------------Imagenes*/
+#gamers-player1{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 4em;
+}
+#gamers-player1-h3{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  padding: 10px 40px;
+  background-color: var(--yellow);
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.3em;
+  color: var(--dark);
+}
+#gamers-img-player1{
+  width: 100%;
+  height: 100%;
+  box-shadow: 3px 3px 5px var(--black);
+}
+#gamers-plus{
+  display: none;
+}
+/*---------------------hover*/
+#gamers-img-player1-2{
+  transition: 0.5s ease;
+  filter: brightness(40%);
+  width: 100%;
+  height: 100%;
+}
+#gamers-player1-h3:hover{
+  display: none;
+}
+#gamers-plus-ye{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  padding: 10px 40px;
+  background-color: var(--yellow);
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.3em;
+  color: var(--dark);
+}
 
 
 /* Bootstrap breakpoints */
