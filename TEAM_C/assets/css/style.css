@@ -17,6 +17,7 @@ font-family: 'Titillium Web', sans-serif; */
   --dark: #292a2b;
   --black: #000;
   --white: #fff;
+  --grey: #929292;
   box-sizing: border-box;
 }
 
@@ -46,6 +47,7 @@ font-family: 'Titillium Web', sans-serif; */
   font-family: 'Poppins', sans-serif;
   margin-bottom: 2em;
   width: 100%;
+  color: var(--grey);
 }
 /*--------------------------Imagenes*/
 .gamers-player1{
@@ -116,7 +118,7 @@ font-family: 'Titillium Web', sans-serif; */
 /* Small devices (landscape phones, 390px and up) */
 @media (min-width: 390px) {
 }
-/*----------------------TABLET-------*/
+/*----------------------TABLET----------------------------*/
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   #gamers{
@@ -148,15 +150,15 @@ font-family: 'Titillium Web', sans-serif; */
     width: 9em;
   }
 }
-/*-------------------------PC-------------------*/
+/*-------------------------PC-------------------------------------*/
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   #gamers{
-    margin: 2% 2.5% 2% 2.5%;
+    margin: 2% auto;
     max-width: 1440px;
   }
   .gamers-p{
-    font-size: 1em;
+    font-size: 1.3em;
   }
   /*---------------------Imagenes*/
   .gamers-cont{
