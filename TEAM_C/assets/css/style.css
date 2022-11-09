@@ -198,11 +198,15 @@ header
     font-size: 1.8em;
     font-family: "Titillium Web", sans-serif;
     color: var(--white);
+    text-shadow: 2px 2px 4px #343131;
+
   }
   header > div > div > nav > h3 > span.span-yellow > h3 {
     display: inline-block;
     font-family: "Titillium Web", sans-serif;
     font-size: 1em !important;
+    text-shadow: 2px 2px 4px #343131;
+
     color: var(--yellowHack);
   }
   header > div > div > nav > div.toggle-menu {
