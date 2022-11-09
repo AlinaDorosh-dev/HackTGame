@@ -18,6 +18,7 @@ font-family: 'Titillium Web', sans-serif; */
   --black: #000;
   --white: #fff;
   --yellowHack: #ffc311;
+  --grey: #929292;
   box-sizing: border-box;
 }
 
@@ -30,53 +31,99 @@ font-family: 'Titillium Web', sans-serif; */
   box-sizing: inherit;
   outline: 0 none;
 }
-body{
-  background-color: var(--black);
+
+body {
+  /* background-color: var(--black); */
 }
-div#gallery-text{
-  /* width: 60vw; */
-  color: var(--white);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: auto 20%;
+#form {
+  padding: 1em;
+}
+#form > h1 {
   text-align: center;
-  font-size: 1.5rem;
 }
-#gallery-text > h1 > span:nth-child(2){
-  color: var(--yellowHack);
-}
-#gallery-text > h1{
-  font-family: 'Titillium Web', sans-serif;
-  font-size: 3.5rem;
+#form > form {
+  background-color: var(--white);
+  /* width: 100vw;
+  height: 100vh; */
 }
 
-#footer {
-  background-color: var(--black);
+.textinputs {
+  /* display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column; */
+}
+/* Botones Remember y Sign in */
+#rememberme {
+  /* display: flex;
+  flex-direction: column; */
+  /* align-items: flex-start;
+  align-content: flex-start; */
+  color: var(--grey);
   display: flex;
-  flex-direction: column;
   align-items: center;
-  font-size: 1.2rem;
+  justify-content: flex-start;
+  padding: 1em 0;
 }
-#footer > h2 {
-  font-family: "Titillium Web", sans-serif;
+#rememberme input{
+  width: auto !important;
+  margin-right: 20px;
 }
-#footer > h3 {
+
+/* Botón Sign in */
+#form input:nth-child(3) {
+  background-color: var(--yellowHack);
+  padding: 1em;
+  color: var(--white);
+}
+
+/* h1 login */
+#form form h1 {
   font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  /* margin: 0 auto;  */
+  text-align: center;
 }
-#footer > h2 > span:nth-child(1) {
+
+/* Imputs Username y Password */
+#form form input:nth-child(1),
+input:nth-child(2) {
+  border: 1px solid var(--grey);
+  width: 100%;
+  padding: 1em;
+}
+/* Botón remember */
+#rememberme {
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;  */
+  /* margin-right: 60%; */
+  /* flex-direction: row; */
+  color: var(--grey);
+}
+
+/* Botón Sign in */
+#form form input:nth-child(5) {
+  justify-content: flex-start;
+  background-color: var(--yellowHack);
+  padding: 1em;
   color: var(--white);
+  /* margin-right: 68%; */
 }
-#footer > h2 > span:nth-child(2) {
-  color: var(--yellowHack);
+/* Enlaces Lost Password y Create an Account */
+#password-account {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 80%;
 }
-#footer > h3 > span:nth-child(1) {
-  color: var(--white);
+#password-account a:nth-child(1) {
+  text-decoration: none;
+  color: var(--black);
 }
-#footer > h3 > span:nth-child(2) {
-  color: var(--yellowHack);
-  text-decoration: underline;
+#password-account a:nth-child(2) {
+  text-decoration: none;
+  color: var(--grey);
 }
 
 /* Bootstrap breakpoints */
