@@ -18,6 +18,7 @@ font-family: 'Titillium Web', sans-serif; */
   --black: #000;
   --white: #fff;
   --yellowHack: #ffc311;
+  --grey: #929292;
   box-sizing: border-box;
 }
 
@@ -33,9 +34,14 @@ font-family: 'Titillium Web', sans-serif; */
 
 header > div > div > nav.main-nav {
   height: 7em;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
   align-content: space-between;
   flex-direction: column;
   align-items: center;
+  transition: all 0.3s;
+  background-color: var(--white);
 }
 header > div > div > nav > h3 {
   margin-left: 1em;
@@ -100,6 +106,8 @@ header > div > div > nav > div > div.close-menu > img.icon-close-menu {
 header > div > div > nav.main-nav > div.main-menu > .icons-menu {
   list-style: none;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -124,7 +132,7 @@ header > div > div > nav.main-nav > div.main-menu > ul.links-menu > li > a {
   text-decoration: none;
   color: var(--white);
 }
-header > div > div > nav.main-nav > div.main-menu > .btn-container {
+header > div > div > nav.main-nav > div.main-menu > ul > .btn-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -132,24 +140,35 @@ header > div > div > nav.main-nav > div.main-menu > .btn-container {
   width: 100%;
   margin-top: 2em;
 }
-header > div > div > nav.main-nav > div.main-menu > div > .btn-menu {
+header > div > div > nav.main-nav > div.main-menu > ul > div > .btn-menu {
   background-color: var(--yellowHack);
   width: 45%;
   padding: 1em 0;
   color: var(--white);
+}
+header > div > div > nav.main-nav > div.main-menu > ul > div > .btn-menu:hover {
+  color: var(--black);
 }
 header
   > div
   > div
   > nav.main-nav
   > div.main-menu
+  > ul
   > div
   > .btn-menu:first-child {
   border-top-left-radius: 0.4em;
   border-bottom-left-radius: 0.4em;
   border-right: 1px solid rgba(145, 145, 145, 0.51);
 }
-header > div > div > nav.main-nav > div.main-menu > div > .btn-menu:last-child {
+header
+  > div
+  > div
+  > nav.main-nav
+  > div.main-menu
+  > ul
+  > div
+  > .btn-menu:last-child {
   border-top-right-radius: 0.4em;
   border-bottom-right-radius: 0.4em;
 }
@@ -166,11 +185,13 @@ header > div > div > nav.main-nav > div.main-menu > div > .btn-menu:last-child {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   header > div > div > nav.main-nav {
-    height: 15em;
-    position: absolute;
+    height: 10em;
+    position: fixed;
     align-content: space-between;
     flex-direction: column;
     align-items: center;
+    transition: all 0.3s;
+    background-color: transparent;
   }
   header > div > div > nav > h3 {
     margin-left: 1em;
@@ -195,13 +216,14 @@ header > div > div > nav.main-nav > div.main-menu > div > .btn-menu:last-child {
   }
   header > div > div > nav > div.main-menu {
     position: fixed;
-    right: 0;
     width: 50%;
-    height:15em;
+    height: 10em;
     display: flex;
-    transform: translateX(0);
+    flex-direction: column-reverse;
+    background-color: transparent;
+    transition: all 0.3s;
+    transform: translateX(-5%);
   }
-
 
   /* header > div > div > nav > div.main-menu-show {
     transform: translateX(0);
@@ -216,9 +238,13 @@ header > div > div > nav.main-nav > div.main-menu > div > .btn-menu:last-child {
 
   header > div > div > nav.main-nav > div.main-menu > .icons-menu {
     list-style: none;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
     align-items: center;
+    margin-left: 2em;
+    margin-bottom: -1em;
   }
 
   header > div > div > nav.main-nav > div.main-menu > ul.icons-menu > li {
@@ -228,31 +254,44 @@ header > div > div > nav.main-nav > div.main-menu > div > .btn-menu:last-child {
   header > div > div > nav.main-nav > div.main-menu > ul.icons-menu > li > a {
     text-decoration: none;
     color: var(--white);
+    text-shadow: 2px 2px 4px #343131;
+    font-size: 1.5em;
   }
+  header > div > div > nav.main-nav > div.main-menu > ul.icons-menu > li > a:hover {
+    color: var(--yellowHack);
+  }
+
   header > div > div > nav.main-nav > div.main-menu > ul.links-menu {
     list-style: none;
-    margin: 2em 1em 0;
+    margin: 0 0 2em 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
   }
   header > div > div > nav.main-nav > div.main-menu > ul.links-menu > li {
     margin-top: 2em;
-    border-bottom: 1px solid var(--white);
+    border: none;
   }
   header > div > div > nav.main-nav > div.main-menu > ul.links-menu > li > a {
     text-decoration: none;
     color: var(--white);
+    text-shadow: 2px 2px 4px #343131;
+    font-size: 1.1em;
   }
-  header > div > div > nav.main-nav > div.main-menu > .btn-container {
+  header > div > div > nav.main-nav > div.main-menu > ul.links-menu > li > a:hover {
+    color: var(--yellowHack);
+  }
+  header > div > div > nav.main-nav > div.main-menu > ul > .btn-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     align-content: center;
-    width: 100%;
-    margin-top: 2em;
+    padding-right: 2.5em;
   }
-  header > div > div > nav.main-nav > div.main-menu > div > .btn-menu {
+  header > div > div > nav.main-nav > div.main-menu > ul > div > .btn-menu {
     background-color: var(--yellowHack);
-    width: 45%;
-    padding: 1em 0;
+    width: 35%;
+    padding: 0.8em 0;
     color: var(--white);
   }
   header
@@ -260,10 +299,22 @@ header > div > div > nav.main-nav > div.main-menu > div > .btn-menu:last-child {
     > div
     > nav.main-nav
     > div.main-menu
+    > ul
+    > div
+    > .btn-menu:hover {
+    color: var(--black);
+  }
+
+  header
+    > div
+    > div
+    > nav.main-nav
+    > div.main-menu
+    > ul
     > div
     > .btn-menu:first-child {
-    border-top-left-radius: 0.4em;
-    border-bottom-left-radius: 0.4em;
+    border-top-left-radius: 1.5em;
+    border-bottom-left-radius: 1.5em;
     border-right: 1px solid rgba(145, 145, 145, 0.51);
   }
   header
@@ -271,10 +322,11 @@ header > div > div > nav.main-nav > div.main-menu > div > .btn-menu:last-child {
     > div
     > nav.main-nav
     > div.main-menu
+    > ul
     > div
     > .btn-menu:last-child {
-    border-top-right-radius: 0.4em;
-    border-bottom-right-radius: 0.4em;
+    border-top-right-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
   }
 }
 
