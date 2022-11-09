@@ -19,7 +19,7 @@ font-family: 'Titillium Web', sans-serif; */
   --white: #fff;
   --yellowHack: #ffc311;
   --grey: #929292;
-  --lightgrey:#E6E6E6;
+  --lightgrey: #e6e6e6;
   box-sizing: border-box;
 }
 
@@ -55,11 +55,11 @@ input:nth-child(2) {
   /* font-size: 100; */
 }
 /* Margen al Username */
-#form form input:nth-child(1){
+#form form input:nth-child(1) {
   margin: 3% 0;
 }
 /* Color gris placeholder Username Password */
-input::placeholder{
+input::placeholder {
   /* color: var(--grey); */
   color: #d6d4d4;
   font-weight: bold;
@@ -74,9 +74,9 @@ input::placeholder{
   margin: 1% 0;
 }
 /* Botón Remember y checkout */
-#rememberme input{
+#rememberme input {
   width: auto !important;
-  margin-right: 10px!important;
+  margin-right: 10px !important;
 }
 
 /* Botón Sign in */
@@ -102,9 +102,7 @@ input::placeholder{
   text-decoration: none;
   color: var(--grey);
 }
-input#rmb{
-  border-radius: 0;
-}
+
 /* Bootstrap breakpoints */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
