@@ -19,6 +19,7 @@ font-family: 'Titillium Web', sans-serif; */
   --white: #fff;
   --yellowHack: #ffc311;
   --grey: #929292;
+  --lightgrey:#E6E6E6;
   box-sizing: border-box;
 }
 
@@ -31,91 +32,67 @@ font-family: 'Titillium Web', sans-serif; */
   box-sizing: inherit;
   outline: 0 none;
 }
-
-body {
-  /* background-color: var(--black); */
-}
 #form {
-  padding: 1em;
+  padding: 2em;
 }
 #form > h1 {
   text-align: center;
+  font-size: 3rem;
+  font-weight: bolder;
+  margin: 3% 0;
 }
 #form > form {
   background-color: var(--white);
-  /* width: 100vw;
-  height: 100vh; */
 }
-
-.textinputs {
-  /* display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column; */
+/* Imputs Username y Password */
+#form form input:nth-child(1),
+input:nth-child(2) {
+  border: 1.6px solid var(--lightgrey);
+  width: 100%;
+  padding: 1.2em;
+  font-family: inherit;
+  /* font-weight: light; */
+  /* font-size: 100; */
+}
+/* Margen al Username */
+#form form input:nth-child(1){
+  margin: 3% 0;
+}
+/* Color gris placeholder Username Password */
+input::placeholder{
+  /* color: var(--grey); */
+  color: #d6d4d4;
+  font-weight: bold;
+  font-size: small;
 }
 /* Botones Remember y Sign in */
 #rememberme {
-  /* display: flex;
-  flex-direction: column; */
-  /* align-items: flex-start;
-  align-content: flex-start; */
-  color: var(--grey);
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 1em 0;
+  color: var(--grey);
+  margin: 1% 0;
 }
+/* Botón Remember y checkout */
 #rememberme input{
   width: auto !important;
-  margin-right: 20px;
+  margin-right: 10px!important;
 }
 
 /* Botón Sign in */
 #form input:nth-child(3) {
   background-color: var(--yellowHack);
-  padding: 1em;
+  padding: 1.5em 2.5em;
   color: var(--white);
+  font-size: 1rem;
 }
 
-/* h1 login */
-#form form h1 {
-  font-family: "Poppins", sans-serif;
-  font-weight: bolder;
-  /* margin: 0 auto;  */
-  text-align: center;
-}
-
-/* Imputs Username y Password */
-#form form input:nth-child(1),
-input:nth-child(2) {
-  border: 1px solid var(--grey);
-  width: 100%;
-  padding: 1em;
-}
-/* Botón remember */
-#rememberme {
-  /* display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-content: flex-start;  */
-  /* margin-right: 60%; */
-  /* flex-direction: row; */
-  color: var(--grey);
-}
-
-/* Botón Sign in */
-#form form input:nth-child(5) {
-  justify-content: flex-start;
-  background-color: var(--yellowHack);
-  padding: 1em;
-  color: var(--white);
-  /* margin-right: 68%; */
-}
 /* Enlaces Lost Password y Create an Account */
 #password-account {
   display: inline-flex;
   justify-content: space-between;
-  width: 80%;
+  width: 100%;
+  padding: 1.5em 0;
 }
 #password-account a:nth-child(1) {
   text-decoration: none;
@@ -125,7 +102,9 @@ input:nth-child(2) {
   text-decoration: none;
   color: var(--grey);
 }
-
+input#rmb{
+  border-radius: 0;
+}
 /* Bootstrap breakpoints */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
