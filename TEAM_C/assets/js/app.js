@@ -49,10 +49,10 @@ window.addEventListener("load", () => {
   }
 
   // JS Alina
-
   let dots = document.querySelectorAll(".fa-circle");
   let image = document.querySelector(".gallery-image");
   let galleryContainer = document.querySelector(".gallery-container");
+  console.log(image);
   for (let i = 0; i < dots.length; i++) {
     dots[i].addEventListener("click", () => {
       image.src = "img/slider/" + (i + 1) + ".jpg";
@@ -65,9 +65,9 @@ window.addEventListener("load", () => {
   }
 
   // Get the modal
-  let modal = document.getElementById("myModal");
-  let login = document.getElementById("login");
-  login.addEventListener("click", () => {
+  let modal = document.getElementById("myModalSignUp");
+  let signUp = document.getElementById("sign-up");
+  signUp.addEventListener("click", () => {
     modal.style.display = "block";
     console.log("working");
   });

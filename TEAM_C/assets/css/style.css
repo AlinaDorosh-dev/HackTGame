@@ -199,7 +199,6 @@ header
     font-family: "Titillium Web", sans-serif;
     color: var(--white);
     text-shadow: 2px 2px 4px #343131;
-
   }
   header > div > div > nav > h3 > span.span-yellow > h3 {
     display: inline-block;
@@ -261,7 +260,14 @@ header
     text-shadow: 2px 2px 4px #343131;
     font-size: 1.5em;
   }
-  header > div > div > nav.main-nav > div.main-menu > ul.icons-menu > li > a:hover {
+  header
+    > div
+    > div
+    > nav.main-nav
+    > div.main-menu
+    > ul.icons-menu
+    > li
+    > a:hover {
     color: var(--yellowHack);
   }
 
@@ -282,7 +288,14 @@ header
     text-shadow: 2px 2px 4px #343131;
     font-size: 1.1em;
   }
-  header > div > div > nav.main-nav > div.main-menu > ul.links-menu > li > a:hover {
+  header
+    > div
+    > div
+    > nav.main-nav
+    > div.main-menu
+    > ul.links-menu
+    > li
+    > a:hover {
     color: var(--yellowHack);
   }
   header > div > div > nav.main-nav > div.main-menu > ul > .btn-container {
@@ -401,10 +414,16 @@ header
   font-family: "Titillium Web", sans-serif;
   font-size: 2.8rem;
   margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px #343131;
 }
 
 #gallery .text-on-image h1 .yellow-text {
   color: var(--yellow);
+  text-shadow: 2px 2px 4px #343131;
+}
+
+#gallery .text-on-image p {
+  text-shadow: 2px 2px 4px #343131;
 }
 
 /* Provisional button */
@@ -418,7 +437,7 @@ header
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  /* padding-top: 100px; */ /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -433,11 +452,22 @@ header
   margin: auto;
   display: block;
   width: 100vw;
-  height: 60vh;
-  /* provisional style  */
-  background: #198754;
-  color: white;
-  font-size: 5rem;
+  height: 100vh;
+  background: white;
+  text-align: center;
+}
+
+header #myModalSignUp .modal-content .title {
+  font-size: 3rem;
+  padding: 3rem;
+  font-weight: 900;
+  color: rgb(50, 47, 47);
+  font-family: "Titillium Web", sans-serif;
+}
+
+header #myModalSignUp .modal-content .paragraph {
+  padding: 3rem 10%;
+  color: var(--grey);
 }
 
 /* Add Animation */
@@ -468,12 +498,20 @@ header
 /* The Close Button */
 .close {
   position: absolute;
-  top: 15px;
-  right: 35px;
+  top: 0px;
+  right: 0px;
   color: #f1f1f1;
+  background-color: rgb(50, 47, 47);
   font-size: 40px;
-  font-weight: bold;
   transition: 0.3s;
+  width: 50px;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .close:hover,
@@ -491,7 +529,9 @@ header
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  /* here your code */
+  header #myModalSignUp .modal-content .paragraph {
+    font-size: 1.5rem;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -505,6 +545,20 @@ header
   #gallery .text-on-image {
     min-width: 60%;
     max-width: 70%;
+  }
+
+  header #myModalSignUp .modal-content .title {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  header #myModalSignUp .modal-content .paragraph {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 400px;
   }
 }
 
