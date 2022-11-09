@@ -1,6 +1,3 @@
-/* font-family: 'Poppins', sans-serif;
-font-family: 'Titillium Web', sans-serif; */
-
 :root {
   font-size: 0.875rem;
   font-family: 'Poppins', sans-serif;
@@ -30,166 +27,126 @@ font-family: 'Titillium Web', sans-serif; */
   box-sizing: inherit;
   outline: 0 none;
 }
-#gamers{
+#contact{
   margin: 5%;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Poppins', sans-serif;
+  max-width: 1440px;
 }
-.gamers-h2{
-  font-family: 'Titillium Web', sans-serif;
-  color: var(--dark);
-  font-size: 3em;
-  line-height: 1em;
+.contact-inputs{
+  flex: 60%;
+  display: inline-block;
 }
-.gamers-yellow{
+.contact-info{
+  flex: 40%;
+  margin: 0 2%;
+  display: inline-block;
+  align-items: left;
+  color: #777777;
+}
+/*-----------------------INPUTS*/
+.contact-row{
+  width: 100%;
+  margin-bottom: 1em;
+}
+.inputs-name{
+  width: 49%;
+  border: #EEEEEE 1px solid;
+  margin-right: 1%;
+  padding: 1em;
+  font-family: 'Poppins', sans-serif;
+}
+.inputs-email{
+  width: 49%;
+  border: #EEEEEE 1px solid;
+  padding: 1em;
+  font-family: 'Poppins', sans-serif;
+}
+.inputs-phone{
+  width: 49%;
+  border: #EEEEEE 1px solid;
+  margin-right: 1%;
+  padding: 1em;
+  font-family: 'Poppins', sans-serif;
+}
+.inputs-subject{
+  width: 49%;
+  border: #EEEEEE 1px solid;
+  padding: 1em;
+  font-family: 'Poppins', sans-serif;
+}
+.inputs-area{
+  width: 100%;
+  border: #EEEEEE 1px solid;
+  margin-bottom: 1em;
+  font-family:  'Poppins', sans-serif;
+  padding: 1em;
+}
+.inputs-button{
+  border: var(--yellow) 1px solid;
+  background-color: var(--yellow);
+  padding: 1.1em 2em;
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+}
+/*-----------------------INFO-----------------*/
+.contact-info-emojis-p{
+  margin-bottom: 3em;
+}
+.contact-info-1{
+  display: flex;
+  margin-bottom: 1.3em;
+}
+.fa-solid{
+  margin-right: 1em;
   color: var(--yellow);
 }
-.gamers-p{
-  margin-top: 1em;
-  font-family: 'Poppins', sans-serif;
-  margin-bottom: 2em;
-  width: 100%;
-  color: var(--grey);
+.info-p-emoji{
+  line-height: 15px;
+  font-size: 0.9em;
 }
-/*--------------------------Imagenes*/
-.gamers-player1{
-  position: relative;
-  display: inline-block;
-  text-align: center;
-  margin-bottom: 4em;
+.info-lorem{
+  font-size: 0.9em;
+  line-height: 23px;
 }
-.gamers-player1-h3{
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -70%);
-  padding: 10px 40px;
-  background-color: var(--yellow);
-  font-family: 'Titillium Web', sans-serif;
-  font-size: 1.3em;
-  color: var(--dark);
+.info-ye{
+  color: var(--yellow);
 }
-.gamers-img-player1{
-  width: 100%;
-  height: 100%;
-  box-shadow: 3px 3px 5px var(--black);
+.info-underline{
+  text-decoration: underline;
 }
-.gamers-plus{
-  display: none;
+.info-black, .info-ye{
+  font-weight: 700;
 }
-/*---------------------hover*/
-.gamers-img-player1-2{
-  transition: 0.5s ease;
-  filter: brightness(40%);
-  width: 100%;
-  height: 100%;
-}
-.gamers-player1-h3-hide{
-  display: none;
-}
-.gamers-plus-ye{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px 10px;
-  background-color: var(--yellow);
-  font-size: 1.3em;
-  color: var(--dark);
-  border: var(--yellow) 1px solid;
-  border-radius: 50%;
-}
-.gamers-player1-h3-hide{
-  display: none;
-}
-.gamer-plus-wh{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px 10px;
-  background-color: var(--white);
-  font-size: 1.3em;
-  color: var(--dark);
-  border: var(--white) 1px solid;
-  border-radius: 50%;
-}
-
 /*-----------------------------------------RESPONSIVE------------------------------------*/
 /* Bootstrap breakpoints */
 /* Small devices (landscape phones, 390px and up) */
-@media (min-width: 390px) {
+@media (max-width: 715px) {
+  #contact{
+      display:block;
+  }
+  .contact-inputs{
+      display: inline-block;
+  }
+  .contact-info{
+      margin: 10% 2% 0 2%;
+      display: inline-block;
+      align-items: left;
+      color: var(--grey);
+  }
+  /*-----------------------INPUTS*/
+  .inputs-email{
+      float: right;
+  }
+  .inputs-subject{
+      float: right;
+  }
+  /*-----------------------INFO-----------------*/
+  .contact-info{
+      margin: 10% 3% 0 3%;
+  }
 }
 /*----------------------TABLET----------------------------*/
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  #gamers{
-    margin: 2% 2.5% 2% 2.5%;
-  }
-  .gamers-p{
-    font-size: 1.3em;
-  }
-  /*---------------------Imagenes*/
-  .gamers-cont{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 97%;
-  margin: 1% 2.5% 2% 2%;
-  }
-  .gamers-player1{
-    flex: 28%;
-    width: 100%;
-  }
-  .gamers-player1:first-of-type{
-    margin-right: 2%;
-  } 
-  .gamers-player1:last-of-type{
-    margin-left: 2%;
-  }
-  .gamers-player1-h3{
-    font-size: 1.5em;
-    width: 9em;
-  }
-}
-/*-------------------------PC-------------------------------------*/
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  #gamers{
-    margin: 2% auto;
-    max-width: 1440px;
-  }
-  .gamers-p{
-    font-size: 1.3em;
-  }
-  /*---------------------Imagenes*/
-  .gamers-cont{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 97%;
-  margin: 1% 2.5% 2% 2%;
-  }
-  .gamers-player1{
-    flex: 28%;
-    width: 100%;
-  }
-  .gamers-player1:first-of-type{
-    margin-right: 2%;
-  } 
-  .gamers-player1:last-of-type{
-    margin-left: 2%;
-  }
-  .gamers-player1-h3{
-  font-size: 1.5em;
-  width: 9em;
-  }
-}
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  /* here your code */
-}
-
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-  /* here your code */
-}
+@media (min-width: 768px) {}
