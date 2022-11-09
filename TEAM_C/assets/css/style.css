@@ -17,7 +17,7 @@ font-family: 'Titillium Web', sans-serif; */
   --greypre: #f2f2f2;
   --lightblue: #47d3e5;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 *,
@@ -42,8 +42,10 @@ font-family: 'Titillium Web', sans-serif; */
 
 #gallery .dots-container {
   position: absolute;
-  bottom: 20px;
-  width: 90%;
+  bottom: 25px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 #gallery img {
@@ -87,20 +89,18 @@ font-family: 'Titillium Web', sans-serif; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  min-width: 80%;
 }
 
-#gallery .text-on-image h1{
-  font-family: 'Titillium Web', sans-serif;
-  font-size: 2.5rem;
+#gallery .text-on-image h1 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
 }
 
-#gallery .text-on-image h1 .yellow-text{
+#gallery .text-on-image h1 .yellow-text {
   color: var(--yellow);
 }
-
-
-
-
 
 /* Provisional button */
 #login {
@@ -134,8 +134,6 @@ font-family: 'Titillium Web', sans-serif; */
   color: white;
   font-size: 5rem;
 }
-
-
 
 /* Add Animation */
 .modal-content {
@@ -193,12 +191,28 @@ font-family: 'Titillium Web', sans-serif; */
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  /* here your code */
+  #gallery .text-on-image h1 {
+    font-size: 3.5rem;
+  }
+  #gallery .text-on-image p {
+    font-size: 1.5rem;
+  }
+  #gallery .text-on-image {
+    min-width: 60%;
+    max-width: 70%;
+  }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  /* here your code */
+  #gallery .text-on-image h1 {
+    font-size: 5rem;
+  }
+
+  #gallery .text-on-image {
+    min-width: 50%;
+    max-width:60% ;
+  }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
