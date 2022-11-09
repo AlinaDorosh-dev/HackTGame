@@ -31,55 +31,56 @@ font-family: 'Titillium Web', sans-serif; */
   outline: 0 none;
 }
 
-header > h3 {
-  display: inline-block;
-  margin-top: 0.8em;
+header > div > div > nav.main-nav {
+  height: 7em;
+  align-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+header > div > div > nav > h3 {
   margin-left: 1em;
   font-size: 1.8em;
   font-family: "Titillium Web", sans-serif;
+  color: var(--black);
 }
-header > h3 > span.span-yellow > h3 {
+header > div > div > nav > h3 > span.span-yellow > h3 {
   display: inline-block;
   font-family: "Titillium Web", sans-serif;
   font-size: 1em !important;
   color: var(--yellowHack);
 }
-header > nav > div.toggle-menu {
+header > div > div > nav > div.toggle-menu {
   width: 50px;
   position: absolute;
   top: 1.5rem;
   right: 1rem;
   cursor: pointer;
 }
-header > nav > div > img.icon-menu {
+header > div > div > nav > div > img.icon-menu {
   width: 100%;
   background-color: var(--dark);
   padding: 1rem;
   border-radius: 0.4rem;
 }
 
-header > nav.main-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-header > nav > div.main-menu {
+header > div > div > nav > div.main-menu {
   position: fixed;
   width: 70%;
   height: 100vh;
   top: 0;
   right: 0;
   display: flex;
+  text-align: left;
   flex-direction: column;
-  align-items: left;
   background-color: var(--dark);
   transition: transform 0.3s;
   transform: translateX(100%);
 }
-header > nav > div.main-menu-show {
+header > div > div > nav > div.main-menu-show {
   transform: translateX(0);
+  z-index: 1;
 }
-header > nav > div > div.close-menu {
+header > div > div > nav > div > div.close-menu {
   width: 50px;
   position: absolute;
   top: 0;
@@ -88,7 +89,7 @@ header > nav > div > div.close-menu {
   margin-right: 1em;
   cursor: pointer;
 }
-header > nav > div > div.close-menu > img.icon-close-menu {
+header > div > div > nav > div > div.close-menu > img.icon-close-menu {
   position: static;
   width: 100%;
   background-color: var(--dark);
@@ -96,32 +97,61 @@ header > nav > div > div.close-menu > img.icon-close-menu {
   border-radius: 0.4rem;
 }
 
-header > nav.main-nav > div.main-menu > .icons-menu {
+header > div > div > nav.main-nav > div.main-menu > .icons-menu {
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-header > nav.main-nav > div.main-menu > ul.icons-menu > li {
+header > div > div > nav.main-nav > div.main-menu > ul.icons-menu > li {
   list-style: none;
   margin: 2em 1em 0;
 }
-header > nav.main-nav > div.main-menu > ul.icons-menu > li > a {
+header > div > div > nav.main-nav > div.main-menu > ul.icons-menu > li > a {
   text-decoration: none;
   color: var(--white);
 }
-header > nav.main-nav > div.main-menu > ul.links-menu {
+header > div > div > nav.main-nav > div.main-menu > ul.links-menu {
   list-style: none;
   margin: 2em 1em 0;
 }
-header > nav.main-nav > div.main-menu > ul.links-menu > li {
+header > div > div > nav.main-nav > div.main-menu > ul.links-menu > li {
   margin-top: 2em;
   border-bottom: 1px solid var(--white);
 }
-header > nav.main-nav > div.main-menu > ul.links-menu > li > a {
+header > div > div > nav.main-nav > div.main-menu > ul.links-menu > li > a {
   text-decoration: none;
   color: var(--white);
+}
+header > div > div > nav.main-nav > div.main-menu > .btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  margin-top: 2em;
+}
+header > div > div > nav.main-nav > div.main-menu > div > .btn-menu {
+  background-color: var(--yellowHack);
+  width: 45%;
+  padding: 1em 0;
+  color: var(--white);
+}
+header
+  > div
+  > div
+  > nav.main-nav
+  > div.main-menu
+  > div
+  > .btn-menu:first-child {
+  border-top-left-radius: 0.4em;
+  border-bottom-left-radius: 0.4em;
+  border-right: 1px solid rgba(145, 145, 145, 0.51);
+}
+header > div > div > nav.main-nav > div.main-menu > div > .btn-menu:last-child {
+  border-top-right-radius: 0.4em;
+  border-bottom-right-radius: 0.4em;
 }
 
 /* Bootstrap breakpoints */
@@ -131,26 +161,310 @@ header > nav.main-nav > div.main-menu > ul.links-menu > li > a {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  header > nav.main-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  header > nav > div.main-menu {
-    display: flex;
+  header > div > div > nav.main-nav {
+    height: 15em;
+    position: absolute;
+    align-content: space-between;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
   }
-  header > nav.main-nav > div.main-menu > ul.icons-menu > li > a {
-    text-decoration: none;
-    color: var(--black);
+  header > div > div > nav > h3 {
+    margin-left: 1em;
+    font-size: 1.8em;
+    font-family: "Titillium Web", sans-serif;
+    color: var(--white);
   }
-  header > nav > div.toggle-menu {
+  header > div > div > nav > h3 > span.span-yellow > h3 {
+    display: inline-block;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 1em !important;
+    color: var(--yellowHack);
+  }
+  header > div > div > nav > div.toggle-menu {
     display: none;
   }
+  header > div > div > nav > div > img.icon-menu {
+    width: 100%;
+    background-color: var(--dark);
+    padding: 1rem;
+    border-radius: 0.4rem;
+  }
+  header > div > div > nav > div.main-menu {
+    position: fixed;
+    right: 0;
+    width: 50%;
+    height:15em;
+    display: flex;
+    transform: translateX(0);
+  }
+
+
+  /* header > div > div > nav > div.main-menu-show {
+    transform: translateX(0);
+    z-index: 1;
+  } */
+  header > div > div > nav > div > div.close-menu {
+    display: none;
+  }
+  header > div > div > nav > div > div.close-menu > img.icon-close-menu {
+    display: none;
+  }
+
+  header > div > div > nav.main-nav > div.main-menu > .icons-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header > div > div > nav.main-nav > div.main-menu > ul.icons-menu > li {
+    list-style: none;
+    margin: 2em 1em 0;
+  }
+  header > div > div > nav.main-nav > div.main-menu > ul.icons-menu > li > a {
+    text-decoration: none;
+    color: var(--white);
+  }
+  header > div > div > nav.main-nav > div.main-menu > ul.links-menu {
+    list-style: none;
+    margin: 2em 1em 0;
+  }
+  header > div > div > nav.main-nav > div.main-menu > ul.links-menu > li {
+    margin-top: 2em;
+    border-bottom: 1px solid var(--white);
+  }
+  header > div > div > nav.main-nav > div.main-menu > ul.links-menu > li > a {
+    text-decoration: none;
+    color: var(--white);
+  }
+  header > div > div > nav.main-nav > div.main-menu > .btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin-top: 2em;
+  }
+  header > div > div > nav.main-nav > div.main-menu > div > .btn-menu {
+    background-color: var(--yellowHack);
+    width: 45%;
+    padding: 1em 0;
+    color: var(--white);
+  }
+  header
+    > div
+    > div
+    > nav.main-nav
+    > div.main-menu
+    > div
+    > .btn-menu:first-child {
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    border-right: 1px solid rgba(145, 145, 145, 0.51);
+  }
+  header
+    > div
+    > div
+    > nav.main-nav
+    > div.main-menu
+    > div
+    > .btn-menu:last-child {
+    border-top-right-radius: 0.4em;
+    border-bottom-right-radius: 0.4em;
+  }
+}
+
+/* CSS Alina */
+#gallery .gallery-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  min-width: 100vw;
+  max-width: 1440px;
+  height: 100vh;
+  transition: all 0.3s ease-in-out;
+}
+
+#gallery .dots-container {
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#gallery img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#gallery nav {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#gallery nav i.active {
+  -webkit-transform: scale3d(1.3, 1.3, 1.3);
+  transform: scale3d(1.3, 1.3, 1.3);
+  background-color: white;
+  border-radius: 100%;
+}
+
+#gallery .flashit {
+  animation: flash linear 1s;
+}
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Centered text */
+#gallery .text-on-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 80%;
+}
+
+#gallery .text-on-image h1 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+}
+
+#gallery .text-on-image h1 .yellow-text {
+  color: var(--yellow);
+}
+
+/* Provisional button */
+#login {
+  border: #000 solid 1px;
+  padding: 2em;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content  */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100vw;
+  height: 60vh;
+  /* provisional style  */
+  background: #198754;
+  color: white;
+  font-size: 5rem;
+}
+
+/* Add Animation */
+.modal-content {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Bootstrap breakpoints */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  /* here your code */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* here your code */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #gallery .text-on-image h1 {
+    font-size: 3.5rem;
+  }
+  #gallery .text-on-image p {
+    font-size: 1.5rem;
+  }
+  #gallery .text-on-image {
+    min-width: 60%;
+    max-width: 70%;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #gallery .text-on-image h1 {
+    font-size: 5rem;
+  }
+
+  #gallery .text-on-image {
+    min-width: 50%;
+    max-width: 60%;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  /* here your code */
 }
