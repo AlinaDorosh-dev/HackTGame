@@ -33,9 +33,10 @@ font-family: 'Titillium Web', sans-serif; */
 }
 
 #cards-header {
-  width: 40vh;
-  margin-left: 1.5em;
+  width: 90%;
+  margin-left: 2em;
 }
+
 
 #h3-title {
   color: var(--black);
@@ -49,12 +50,15 @@ font-family: 'Titillium Web', sans-serif; */
 
 #p-title{
   font-family: Poppins, sans-serif;
+  color: var(--grey);
+  width: 100%;
 }
 
 #cards {
   margin-left: 1.5em;
   margin-right: 1em;
   width: 41vh;
+  margin: auto;
   margin-bottom: 2em;
 }
 
@@ -83,17 +87,22 @@ span.icon {
 }
 
 span.fa-text {
-  font-size: 0.9em;
-  font-weight: 1000;
+  font-size: 0.8em;
+  font-weight: 900;
   color: var(--grey);
   font-family: Poppins, sans-serif;
+}
+
+span.fa-text:hover{
+  color: var(--yellowHack);
 }
 
 #p-card {
   margin-top: 3%;
   margin-left: 3%;
-  font-size: 1.5em;
+  font-size: 1.1em;
   color: var(--grey);
+  padding-bottom: 5%;
 }
 
 
@@ -128,9 +137,9 @@ span.fa-text {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   #cards-header {
-    width: 80vh;
-    font-size: 18px;
-    margin-left: 1.6em;
+    width: 95%;
+    font-size: 1.5em;
+    margin-left: 1%;
     color: var(--grey);
   }
   #cards {
@@ -139,4 +148,5 @@ span.fa-text {
     margin-left: 2em;
     width: 100%;
   }
+
 }
