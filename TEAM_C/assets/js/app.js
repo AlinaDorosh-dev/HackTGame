@@ -14,9 +14,9 @@ for (let i = 0; i < dots.length; i++) {
 }
 
 // Get the modal
-let modal = document.getElementById("myModal");
-let login = document.getElementById("login");
-login.addEventListener("click", () => {
+let modal = document.getElementById("myModalSignUp");
+let signUp = document.getElementById("sign-up");
+signUp.addEventListener("click", () => {
   modal.style.display = "block";
   console.log("working");
 });
@@ -29,5 +29,4 @@ let closeBtn = document.getElementsByClassName("close")[0];
 closeBtn.addEventListener("click", () => {
   modal.style.display = "none";
 });
-
 
