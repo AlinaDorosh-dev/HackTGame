@@ -1,21 +1,21 @@
 window.addEventListener("load", ()=>{
-    let gamer_img = document.querySelectorAll(".gamers-img-player1");
+    let gamer_img = document.querySelectorAll(".gamers-player1");
     gamer_img.forEach(element => {
         element.addEventListener("mouseover", () =>{
-            element.classList.remove("gamers-img-player1");
-            element.classList.add("gamers-img-player1-2");
-            element.nextElementSibling.classList.remove("gamers-player1-h3");
-            element.nextElementSibling.classList.add("gamers-player1-h3-hide");
-            element.nextElementSibling.nextElementSibling.classList.remove("gamers-plus");
-            element.nextElementSibling.nextElementSibling.classList.add("gamers-plus-ye");
+            element.firstElementChild.classList.remove("gamers-img-player1");
+            element.firstElementChild.classList.add("gamers-img-player1-2");
+            element.firstElementChild.nextElementSibling.classList.remove("gamers-player1-h3");
+            element.firstElementChild.nextElementSibling.classList.add("gamers-player1-h3-hide");
+            element.lastElementChild.classList.remove("gamers-plus");
+            element.lastElementChild.classList.add("gamers-plus-ye");
         });
         element.addEventListener("mouseleave", ()=>{
-            element.classList.remove("gamers-img-player1-2");
-            element.classList.add("gamers-img-player1");
-            element.nextElementSibling.classList.remove("gamers-player1-h3-hide");
-            element.nextElementSibling.classList.add("gamers-player1-h3");
-            element.nextElementSibling.nextElementSibling.classList.remove("gamers-plus-ye");
-            element.nextElementSibling.nextElementSibling.classList.add("gamers-plus");
+            element.firstElementChild.classList.remove("gamers-img-player1-2");
+            element.firstElementChild.classList.add("gamers-img-player1");
+            element.firstElementChild.nextElementSibling.classList.remove("gamers-player1-h3-hide");
+            element.firstElementChild.nextElementSibling.classList.add("gamers-player1-h3");
+            element.lastElementChild.classList.remove("gamers-plus-ye");
+            element.lastElementChild.classList.add("gamers-plus");
         });
     });
     let gamer_plus = document.querySelectorAll(".gamers-plus");
@@ -24,7 +24,11 @@ window.addEventListener("load", ()=>{
             element.classList.remove("gamer-plus-ye");
             element.classList.add("gamer-plus-wh");
         });
-    })
+        element.addEventListener("mouseleave", ()=>{
+            element.classList.remove("gamer-plus-wh");
+            element.classList.add("gamer-plus-ye");
+        });
+    });
 });
 
 

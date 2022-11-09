@@ -29,13 +29,13 @@ font-family: 'Titillium Web', sans-serif; */
   box-sizing: inherit;
   outline: 0 none;
 }
-#gamers{
+/*#gamers{
   margin: 5%;
 }
 .gamers-h2{
   font-family: 'Titillium Web', sans-serif;
   color: var(--dark);
-  font-size: 3em;
+  font-size: 6em;
   line-height: 1em;
 }
 .gamers-yellow{
@@ -46,9 +46,10 @@ font-family: 'Titillium Web', sans-serif; */
   font-family: 'Poppins', sans-serif;
   margin-bottom: 2em;
   width: 100%;
+  font-size: 2em;
 }
 /*--------------------------Imagenes*/
-.gamers-player1{
+/*.gamers-player1{
   position: relative;
   display: inline-block;
   text-align: center;
@@ -74,7 +75,7 @@ font-family: 'Titillium Web', sans-serif; */
   display: none;
 }
 /*---------------------hover*/
-.gamers-img-player1-2{
+/*.gamers-img-player1-2{
   transition: 0.5s ease;
   filter: brightness(40%);
   width: 100%;
@@ -109,22 +110,297 @@ font-family: 'Titillium Web', sans-serif; */
   color: var(--dark);
   border: var(--white) 1px solid;
   border-radius: 50%;
-}
-
+}*/
+/*-----------------------------------------RESPONSIVE------------------------------------*/
 /* Bootstrap breakpoints */
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-  /* here your code */
+/* Small devices (landscape phones, 390px and up) */
+@media (min-width: 390px) {
+  #gamers{
+    margin: 5%;
+  }
+  .gamers-h2{
+    font-family: 'Titillium Web', sans-serif;
+    color: var(--dark);
+    font-size: 3em;
+    line-height: 1em;
+  }
+  .gamers-yellow{
+    color: var(--yellow);
+  }
+  .gamers-p{
+    margin-top: 1em;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 2em;
+    width: 100%;
+  }
+  /*--------------------------Imagenes*/
+  .gamers-player1{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 4em;
+  }
+  .gamers-player1-h3{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    padding: 10px 40px;
+    background-color: var(--yellow);
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.3em;
+    color: var(--dark);
+  }
+  .gamers-img-player1{
+    width: 100%;
+    height: 100%;
+    box-shadow: 3px 3px 5px var(--black);
+  }
+  .gamers-plus{
+    display: none;
+  }
+  /*---------------------hover*/
+  .gamers-img-player1-2{
+    transition: 0.5s ease;
+    filter: brightness(40%);
+    width: 100%;
+    height: 100%;
+  }
+  .gamers-player1-h3-hide{
+    display: none;
+  }
+  .gamers-plus-ye{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 10px;
+    background-color: var(--yellow);
+    font-size: 1.3em;
+    color: var(--dark);
+    border: var(--yellow) 1px solid;
+    border-radius: 50%;
+  }
+  .gamers-player1-h3-hide{
+    display: none;
+  }
+  .gamer-plus-wh{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 10px;
+    background-color: var(--white);
+    font-size: 1.3em;
+    color: var(--dark);
+    border: var(--white) 1px solid;
+    border-radius: 50%;
+  }
 }
-
+/*----------------------TABLET-------*/
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  /* here your code */
+  #gamers{
+    margin: 2% 2.5% 2% 2.5%;
+  }
+  .gamers-h2{
+    font-family: 'Titillium Web', sans-serif;
+    color: var(--dark);
+    font-size: 5em;
+    line-height: 1em;
+  }
+  .gamers-yellow{
+    color: var(--yellow);
+  }
+  .gamers-p{
+    margin-top: 1em;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 2em;
+    width: 100%;
+    font-size: 1.3em;
+  }
+  /*---------------------Imagenes*/
+  .gamers-cont{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 97%;
+  margin: 1% 2.5% 2% 2%;
+  }
+  .gamers-player1{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 4em;
+    flex: 28%;
+    width: 100%;
+  }
+  .gamers-player1:first-of-type{
+    margin-right: 2%;
+  } 
+  .gamers-player1:last-of-type{
+    margin-left: 2%;
+  }
+  .gamers-player1-h3{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    padding: 10px 40px;
+    background-color: var(--yellow);
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.5em;
+    color: var(--dark);
+    width: 9em;
+  }
+  .gamers-img-player1{
+    width: 100%;
+    height: 100%;
+    box-shadow: 3px 3px 5px var(--black);
+  }
+  .gamers-plus{
+    display: none;
+  }
+  /*---------------------hover*/
+  .gamers-img-player1-2{
+    transition: 0.5s ease;
+    filter: brightness(40%);
+    width: 100%;
+    height: 100%;
+  }
+  .gamers-player1-h3-hide{
+    display: none;
+  }
+  .gamers-plus-ye{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 10px;
+    background-color: var(--yellow);
+    font-size: 1.3em;
+    color: var(--dark);
+    border: var(--yellow) 1px solid;
+    border-radius: 50%;
+  }
+  .gamers-player1-h3-hide{
+    display: none;
+  }
+  .gamer-plus-wh{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 10px;
+    background-color: var(--white);
+    font-size: 1.3em;
+    color: var(--dark);
+    border: var(--white) 1px solid;
+    border-radius: 50%;
+  }
 }
-
+/*-------------------------PC-------------------*/
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  /* here your code */
+  @media (min-width: 768px) {
+    #gamers{
+      margin: 2% 2.5% 2% 2.5%;
+    }
+    .gamers-h2{
+      font-family: 'Titillium Web', sans-serif;
+      color: var(--dark);
+      font-size: 3em;
+      line-height: 1em;
+    }
+    .gamers-yellow{
+      color: var(--yellow);
+    }
+    .gamers-p{
+      margin-top: 1em;
+      font-family: 'Poppins', sans-serif;
+      margin-bottom: 2em;
+      width: 100%;
+      font-size: 1em;
+    }
+    /*---------------------Imagenes*/
+    .gamers-cont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 97%;
+    margin: 1% 2.5% 2% 2%;
+    }
+    .gamers-player1{
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      flex: 28%;
+      width: 100%;
+    }
+    .gamers-player1:first-of-type{
+      margin-right: 2%;
+    } 
+    .gamers-player1:last-of-type{
+      margin-left: 2%;
+    }
+    .gamers-player1-h3{
+      position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    padding: 10px 40px;
+    background-color: var(--yellow);
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.5em;
+    color: var(--dark);
+    width: 9em;
+    }
+    .gamers-img-player1{
+      width: 100%;
+      height: 100%;
+      box-shadow: 3px 3px 5px var(--black);
+    }
+    .gamers-plus{
+      display: none;
+    }
+    /*---------------------hover*/
+    .gamers-img-player1-2{
+      transition: 0.5s ease;
+      filter: brightness(40%);
+      width: 100%;
+      height: 100%;
+    }
+    .gamers-player1-h3-hide{
+      display: none;
+    }
+    .gamers-plus-ye{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 10px 10px;
+      background-color: var(--yellow);
+      font-size: 1.3em;
+      color: var(--dark);
+      border: var(--yellow) 1px solid;
+      border-radius: 50%;
+    }
+    .gamers-player1-h3-hide{
+      display: none;
+    }
+    .gamer-plus-wh{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 10px 10px;
+      background-color: var(--white);
+      font-size: 1.3em;
+      color: var(--dark);
+      border: var(--white) 1px solid;
+      border-radius: 50%;
+    }
+  }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
