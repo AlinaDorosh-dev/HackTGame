@@ -96,11 +96,19 @@ font-family: 'Titillium Web', sans-serif; */
   font-family: "Titillium Web", sans-serif;
   font-size: 2.8rem;
   margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px #343131;
 }
 
 #gallery .text-on-image h1 .yellow-text {
   color: var(--yellow);
+  text-shadow: 2px 2px 4px #343131;
 }
+
+#gallery .text-on-image p{
+  text-shadow: 2px 2px 4px #343131;
+}
+
+
 
 /* Provisional button */
 #login {
