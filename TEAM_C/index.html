@@ -19,35 +19,80 @@
   </head>
   <body>
     <header>
-      <h3>
-        Hack<span class="span-yellow"><h3>TGame</h3></span>
-      </h3>
-      <nav class="main-nav">
-        <div id="toggle-menu" class="toggle-menu">
-          <img src="img/menu.png" alt="" class="icon-menu" />
-        </div>
-        <div class="main-menu">
-          <div id="close-menu" class="close-menu">
-            <img src="img/close.png" alt="" class="icon-close-menu" />
+      <div id="gallery">
+        <div class="gallery-container flashit">
+          <nav class="main-nav">
+            <h3>
+              Hack<span class="span-yellow"><h3>TGame</h3></span>
+            </h3>
+            <div id="toggle-menu" class="toggle-menu">
+              <img src="img/menu.png" alt="" class="icon-menu" />
+            </div>
+            <div class="main-menu">
+              <div id="close-menu" class="close-menu">
+                <img src="img/close.png" alt="" class="icon-close-menu" />
+              </div>
+              <ul class="links-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">eSport</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+              <ul class="icons-menu">
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitch"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+              </ul>
+              <div class="btn-container">
+                <button class="btn-menu">LOGIN</button>
+                <button class="btn-menu">SIGN UP</button>
+              </div>
+            </div>
+          </nav>
+          <img src="img/slider/1.jpg" alt="" class="gallery-image" />
+
+          <div class="text-on-image">
+            <h1>WE LOVE <span class="yellow-text">GAMES!</span></h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+              quidem nesciunt delectus ratione dignissimos molestias maiores
+              aliquid harum. Quos, sequi tempora? Perspiciatis velit sed ipsum.
+            </p>
           </div>
-          <ul class="links-menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Games</a></li>
-            <li><a href="#">eSport</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-          <ul class="icons-menu">
-            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-twitch"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-          </ul>
-          <button>LOGIN</button>
-          <button>SIGN UP</button>
+
+          <div class="dots-container">
+            <nav>
+              <i class="fa-regular fa-circle fa-2x active" id="0"></i>
+              <i class="fa-regular fa-circle fa-2x" id="1"></i>
+              <i class="fa-regular fa-circle fa-2x" id="2"></i>
+              <i class="fa-regular fa-circle fa-2x" id="3"></i>
+              <i class="fa-regular fa-circle fa-2x" id="4"></i>
+              <i class="fa-regular fa-circle fa-2x" id="5"></i>
+            </nav>
+          </div>
         </div>
-      </nav>
+      </div>
+
+      <button id="login">This is provisional button</button>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">this is provisional modal window</div>
+      </div>
     </header>
   </body>
   <script src="assets/js/app.js"></script>
