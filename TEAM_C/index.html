@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
-      src="https://kit.fontawesome.com/4070c964fb.js"
+      src="https://kit.fontawesome.com/4edd33e4e2.js"
       crossorigin="anonymous"
     ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,6 +17,263 @@
     <title>HackTGames</title>
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div id="gallery">
+        <div class="gallery-container flashit">
+          <nav class="main-nav">
+            <h3>
+              Hack<span class="span-yellow"><h3>TGame</h3></span>
+            </h3>
+            <div id="toggle-menu" class="toggle-menu">
+              <img src="img/menu.png" alt="" class="icon-menu" />
+            </div>
+            <div class="main-menu">
+              <div id="close-menu" class="close-menu">
+                <img src="img/close.png" alt="" class="icon-close-menu" />
+              </div>
+              <ul class="links-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">eSport</a></li>
+                <li id="contact-window"><a href="#">Contact</a></li>
+              </ul>
+              <ul class="icons-menu">
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitch"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <div class="btn-container">
+                  <button class="btn-menu" id="login-window">LOGIN</button>
+                  <button class="btn-menu" id="sign-up">SIGN UP</button>
+                </div>
+              </ul>
+            </div>
+          </nav>
+          <img src="img/slider/1.jpg" alt="" class="gallery-image" />
+
+          <div class="text-on-image">
+            <h1>WE LOVE <span class="yellow-text">GAMES!</span></h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+              quidem nesciunt delectus ratione dignissimos molestias maiores
+              aliquid harum. Quos, sequi tempora? Perspiciatis velit sed ipsum.
+            </p>
+          </div>
+
+          <div class="dots-container">
+            <nav>
+              <i class="fa-regular fa-circle fa-2x active" id="0"></i>
+              <i class="fa-regular fa-circle fa-2x" id="1"></i>
+              <i class="fa-regular fa-circle fa-2x" id="2"></i>
+              <i class="fa-regular fa-circle fa-2x" id="3"></i>
+              <i class="fa-regular fa-circle fa-2x" id="4"></i>
+              <i class="fa-regular fa-circle fa-2x" id="5"></i>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Modal for Sign UP-->
+      <div id="myModalSignUp" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h1 class="title">SIGN UP</h1>
+          <p class="paragraph">New mempership are not allowed</p>
+        </div>
+      </div>
+
+      <!-- The Modal for Contact-->
+      <div id="myModalContact" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <section id="contact">
+            <div class="contact-inputs">
+                <div class="contact-row">
+                    <input type="text" class="inputs-name" placeholder="Name">
+                    <input type="text" class="inputs-email" placeholder="Email">
+                </div>
+                <div class="contact-row">
+                    <input type="text" class="inputs-phone"
+                    placeholder="Phone Number">
+                    <input type="text" class="inputs-subject" placeholder="Subject">
+                </div>
+                <textarea name="inputs-area" class="inputs-area" cols="30" rows="7" placeholder="Message"></textarea>
+                <button class="inputs-button">SUBMIT</button>
+            </div>
+            <div class="contact-info">
+                <div class="contact-info-emojis-p">
+                <div class="contact-info-1"><i class="fa-solid fa-location-dot "></i><p class="info-p-emoji">C. Compositor Lehmberg Ruiz 17, Málaga</p></div>
+                <div class="contact-info-1"><i class="fa-solid fa-envelope"></i><p class="info-p-emoji">info@codespaceacademy.com</p></div>
+                <div class="contact-info-1"><i class="fa-solid fa-phone"></i><p class="info-p-emoji">682 82 70 17</p></div>
+                <div class="contact-info-1"><i class="fa-solid fa-blender-phone"></i><p class="info-p-emoji">952 300 426</p></div></div>
+                <p class="info-lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="info-black">Ipsum, quas possimus, dolor</span>  vel optio deserunt dolore excepturi officia maxime reiciendis consectetur esse autem deleniti totam, molestias eum nobis <span class="info-underline">pariatur eaque voluptatibus</span> repellendus? Sit inventore facilis deserunt modi vero nobis culpa adipisci <span class="info-ye">hic magnam molestias dolor doloremque,</span> odio, reprehenderit ab officiis.</p>
+            </div>
+        </section>
+        </div>
+      </div>
+
+<!-- The Modal for Login-->
+<div id="myModalLogin" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="form">
+      <h1>LOGIN</h1>
+      <form action="login">
+        <div class="div textinputs">
+          <input type="text" name="username" placeholder="Username" />
+          <input type="password" placeholder="Password" />
+        </div>
+        <div id="rememberme">
+          <p><i class="fa-regular fa-square"></i> Remember Me</p> 
+        </div>
+<div class="input-login"><button>SIGN IN </button></div>
+        
+      </form>
+      <div id="password-account">
+        <a href="http://">Lost Password?</a>
+        <a href="http://">Create an Account</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    </header>
+
+    <section id="gamers">
+      <h2 class="gamers-h2">Our Team<br><span class="gamers-yellow">& Players</span></h2>
+      <p class="gamers-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet molestiae cum enim aut itaque saepe in dolores numquam illo totam? Commodi ipsam provident ab? Ratione voluptas inventore, amet tempore magni molestias velit animi nulla cumque.</p>
+      <div class="gamers-cont">
+        <div class="gamers-player1">
+          <img class="gamers-img-player1" src="img/players/player-1.jpg" alt="Player1">
+          <div class="gamers-player1-h3"><div><h3 >MASTERG</h3></div></div>
+          <div class="gamers-caption">
+            <i class="fa-regular fa-plus gamers-plus"></i>
+          </div>
+        </div>
+        <div class="gamers-player1">
+          <img class="gamers-img-player1" src="img/players/player-2.jpg" alt="Player2">
+          <div class="gamers-player1-h3"><div><h3>W-QUEEN</h3></div></div>
+          <div class="gamers-caption">
+            <i class="fa-regular fa-plus gamers-plus"></i>
+          </div>
+        </div>
+        <div class="gamers-player1">
+          <img class="gamers-img-player1" src="img/players/player-3.jpg" alt="Player3">
+          <div class="gamers-player1-h3"><div><h3>WIZARD</h3></div></div>
+          <div class="gamers-caption">
+          <i class="fa-regular fa-plus gamers-plus"></i>
+          </div> 
+        </div>
+      </div>
+    </section>
+    
+    
+    <div id="cards-header">
+      <h3 id="h3-title">Our <span id="games-color">Games</span></h3>
+      <p id="p-title">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+        necessitatibus ipsa at iure repellat eligendi, deserunt ea harum unde
+        ratione lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+    </div>
+    <div id="cards">
+      <div id="game-card">
+        <img id="card-image" src="img/games/game-1.png" alt="memory cards" />
+        <h2 id="h2-card">MEMORY CARDS</h2>
+        <span class="icon">
+          <i class="fa-solid fa-display "></i>
+        </span>
+        <span class="fa-text"> STEAM XBOX ONE</span>
+        <p>
+        <p id="p-card">
+          Lorem ipsum dolor sit amet consectetur adipisicing lorem ipsum dolor sit amet consectetur lorem ipsum.
+        </p>
+      </div>
+      <div id="game-card">
+        <img id="card-image" src="img/games/game-2.jpg" alt="memory cards" />
+        <h2 id="h2-card">SPACE INVADERS</h2>
+        <span class="icon">
+          <i class="fa-solid fa-display "></i>
+        </span>
+        <span class="fa-text"> ORIGIN PLAYSTATION 4</span>
+        <p>
+        <p id="p-card">
+          Lorem ipsum dolor sit amet consectetur adipisicing lorem ipsum dolor sit amet consectetur lorem ipsum.
+        </p>
+      </div>
+      <div id="game-card">
+        <img id="card-image" src="img/games/coming-soon.jpg" alt="memory cards" />
+        <h2 id="h2-card">YOUR NEXT GAME</h2>
+        <span class="icon">
+          <i class="fa-solid fa-display "></i>
+        </span>
+        <span class="fa-text"> STEAM UPLAY</span>
+        <p>
+        <p id="p-card">
+          Lorem ipsum dolor sit amet consectetur adipisicing lorem ipsum dolor sit amet consectetur lorem ipsum.
+        </p>
+      </div>
+      <div id="game-card">
+        <img id="card-image" src="img/games/coming-soon.jpg" alt="memory cards" />
+        <h2 id="h2-card">YOUR NEXT GAME</h2>
+        <span class="icon">
+          <i class="fa-solid fa-display "></i>
+        </span>
+        <span class="fa-text"> STEAM UPLAY</span>
+        <p>
+        <p id="p-card">
+          Lorem ipsum dolor sit amet consectetur adipisicing lorem ipsum dolor sit amet consectetur lorem ipsum.
+        </p>
+      </div>
+      <div id="game-card">
+        <img id="card-image" src="img/games/coming-soon.jpg" alt="memory cards" />
+        <h2 id="h2-card">YOUR NEXT GAME</h2>
+        <span class="icon">
+          <i class="fa-solid fa-display "></i>
+        </span>
+        <span class="fa-text"> STEAM UPLAY</span>
+        <p>
+        <p id="p-card">
+          Lorem ipsum dolor sit amet consectetur adipisicing lorem ipsum dolor sit amet consectetur lorem ipsum.
+        </p>
+      </div>
+      <div id="game-card">
+        <img id="card-image" src="img/games/coming-soon.jpg" alt="memory cards" />
+        <h2 id="h2-card">YOUR NEXT GAME</h2>
+        <span class="icon">
+          <i class="fa-solid fa-display "></i>
+        </span>
+        <span class="fa-text"> STEAM UPLAY</span>
+        <p>
+        <p id="p-card">
+          Lorem ipsum dolor sit amet consectetur adipisicing lorem ipsum dolor sit amet consectetur lorem ipsum.
+        </p>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <h2><span>Hack</span><span>TGame</span></h2>
+      <h3>
+        <span
+          >Made with
+          <i class="fa-solid fa-heart text-danger mx-1 fa-beat"></i> by </span
+        ><span>CODE SPACE Team</span>
+      </h3>
+    </footer>
+  </body>
   <script src="assets/js/app.js"></script>
 </html>

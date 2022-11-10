@@ -3,6 +3,7 @@ font-family: 'Titillium Web', sans-serif; */
 
 :root {
   font-size: 0.875rem;
+  font-family: "Poppins", sans-serif;
   --blue: #0d6efd;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -13,9 +14,12 @@ font-family: 'Titillium Web', sans-serif; */
   --green: #198754;
   --teal: #20c997;
   --cyan: #0dcaf0;
+  --dark: #292a2b;
+  --dark: #292a2b;
   --black: #000;
-  --greypre: #f2f2f2;
-  --lightblue: #47d3e5;
+  --white: #fff;
+  --yellowHack: #ffc311;
+  --grey: #929292;
   box-sizing: border-box;
 }
 
@@ -29,22 +33,982 @@ font-family: 'Titillium Web', sans-serif; */
   outline: 0 none;
 }
 
+header > div > div > nav.main-nav {
+  height: 7em;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  align-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s;
+  background-color: var(--white);
+}
+header > div > div > nav > h3 {
+  margin-left: 1em;
+  font-size: 1.8em;
+  font-family: "Titillium Web", sans-serif;
+  color: var(--black);
+}
+header > div > div > nav > h3 > span.span-yellow > h3 {
+  display: inline-block;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1em !important;
+  color: var(--yellowHack);
+}
+header > div > div > nav > div.toggle-menu {
+  width: 50px;
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  cursor: pointer;
+}
+header > div > div > nav > div > img.icon-menu {
+  width: 100%;
+  background-color: var(--dark);
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
 
+header > div > div > nav > div.main-menu {
+  position: fixed;
+  width: 70%;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  background-color: var(--dark);
+  transition: transform 0.3s;
+  transform: translateX(100%);
+}
+header > div > div > nav > div.main-menu-show {
+  transform: translateX(0);
+  z-index: 1;
+}
+header > div > div > nav > div > div.close-menu {
+  width: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 1.5em;
+  margin-right: 1em;
+  cursor: pointer;
+}
+header > div > div > nav > div > div.close-menu > img.icon-close-menu {
+  position: static;
+  width: 100%;
+  background-color: var(--dark);
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+
+header > div > div > nav.main-nav > div.main-menu > .icons-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+header > div > div > nav.main-nav > div.main-menu > ul.icons-menu > li {
+  list-style: none;
+  margin: 2em 1em 0;
+}
+header > div > div > nav.main-nav > div.main-menu > ul.icons-menu > li > a {
+  text-decoration: none;
+  color: var(--white);
+}
+header > div > div > nav.main-nav > div.main-menu > ul.links-menu {
+  list-style: none;
+  margin: 2em 1em 0;
+}
+header > div > div > nav.main-nav > div.main-menu > ul.links-menu > li {
+  margin-top: 2em;
+  border-bottom: 1px solid var(--white);
+}
+header > div > div > nav.main-nav > div.main-menu > ul.links-menu > li > a {
+  text-decoration: none;
+  color: var(--white);
+}
+header > div > div > nav.main-nav > div.main-menu > ul > .btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  margin-top: 2em;
+}
+header > div > div > nav.main-nav > div.main-menu > ul > div > .btn-menu {
+  background-color: var(--yellowHack);
+  width: 45%;
+  padding: 1em 0;
+  color: var(--white);
+}
+header > div > div > nav.main-nav > div.main-menu > ul > div > .btn-menu:hover {
+  color: var(--black);
+}
+header
+  > div
+  > div
+  > nav.main-nav
+  > div.main-menu
+  > ul
+  > div
+  > .btn-menu:first-child {
+  border-top-left-radius: 0.4em;
+  border-bottom-left-radius: 0.4em;
+  border-right: 1px solid rgba(145, 145, 145, 0.51);
+}
+header
+  > div
+  > div
+  > nav.main-nav
+  > div.main-menu
+  > ul
+  > div
+  > .btn-menu:last-child {
+  border-top-right-radius: 0.4em;
+  border-bottom-right-radius: 0.4em;
+}
 
 /* Bootstrap breakpoints */
-/* Small devices (landscape phones, 576px and up) */
+/* Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-  /* here your code */
-}
+} */
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  /* here your code */
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  /* here your code */
+  header > div > div > nav.main-nav {
+    height: 10em;
+    position: fixed;
+    align-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s;
+    background-color: transparent;
+  }
+  header > div > div > nav > h3 {
+    margin-left: 1em;
+    font-size: 1.8em;
+    font-family: "Titillium Web", sans-serif;
+    color: var(--white);
+    text-shadow: 2px 2px 4px #343131;
+  }
+  header > div > div > nav > h3 > span.span-yellow > h3 {
+    display: inline-block;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 1em !important;
+    text-shadow: 2px 2px 4px #343131;
+
+    color: var(--yellowHack);
+  }
+  header > div > div > nav > div.toggle-menu {
+    display: none;
+  }
+  header > div > div > nav > div > img.icon-menu {
+    width: 100%;
+    background-color: var(--dark);
+    padding: 1rem;
+    border-radius: 0.4rem;
+  }
+  header > div > div > nav > div.main-menu {
+    position: fixed;
+    width: 50%;
+    height: 10em;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: transparent;
+    transition: all 0.3s;
+    transform: translateX(-5%);
+  }
+
+  header > div > div > nav > div > div.close-menu {
+    display: none;
+  }
+  header > div > div > nav > div > div.close-menu > img.icon-close-menu {
+    display: none;
+  }
+
+  header > div > div > nav.main-nav > div.main-menu > .icons-menu {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 2em;
+    margin-bottom: -1em;
+  }
+
+  header > div > div > nav.main-nav > div.main-menu > ul.icons-menu > li {
+    list-style: none;
+    margin: 2em 1em 0;
+  }
+  header > div > div > nav.main-nav > div.main-menu > ul.icons-menu > li > a {
+    text-decoration: none;
+    color: var(--white);
+    text-shadow: 2px 2px 4px #343131;
+    font-size: 1.5em;
+  }
+  header
+    > div
+    > div
+    > nav.main-nav
+    > div.main-menu
+    > ul.icons-menu
+    > li
+    > a:hover {
+    color: var(--yellowHack);
+  }
+
+  header > div > div > nav.main-nav > div.main-menu > ul.links-menu {
+    list-style: none;
+    margin: 0 0 2em 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  header > div > div > nav.main-nav > div.main-menu > ul.links-menu > li {
+    margin-top: 2em;
+    border: none;
+  }
+  header > div > div > nav.main-nav > div.main-menu > ul.links-menu > li > a {
+    text-decoration: none;
+    color: var(--white);
+    text-shadow: 2px 2px 4px #343131;
+    font-size: 1.1em;
+  }
+  header
+    > div
+    > div
+    > nav.main-nav
+    > div.main-menu
+    > ul.links-menu
+    > li
+    > a:hover {
+    color: var(--yellowHack);
+  }
+  header > div > div > nav.main-nav > div.main-menu > ul > .btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+    padding-right: 2.5em;
+  }
+  header > div > div > nav.main-nav > div.main-menu > ul > div > .btn-menu {
+    background-color: var(--yellowHack);
+    width: 35%;
+    padding: 0.8em 0;
+    color: var(--white);
+  }
+  header
+    > div
+    > div
+    > nav.main-nav
+    > div.main-menu
+    > ul
+    > div
+    > .btn-menu:hover {
+    color: var(--black);
+  }
+
+  header
+    > div
+    > div
+    > nav.main-nav
+    > div.main-menu
+    > ul
+    > div
+    > .btn-menu:first-child {
+    border-top-left-radius: 1.5em;
+    border-bottom-left-radius: 1.5em;
+    border-right: 1px solid rgba(145, 145, 145, 0.51);
+  }
+  header
+    > div
+    > div
+    > nav.main-nav
+    > div.main-menu
+    > ul
+    > div
+    > .btn-menu:last-child {
+    border-top-right-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
+  }
+}
+
+/* CSS Alina */
+#gallery .gallery-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  min-width: 100vw;
+  max-width: 1440px;
+  height: 100vh;
+  transition: all 0.3s ease-in-out;
+}
+
+#gallery .dots-container {
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#gallery img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#gallery nav {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#gallery nav i.active {
+  -webkit-transform: scale3d(1.3, 1.3, 1.3);
+  transform: scale3d(1.3, 1.3, 1.3);
+  background-color: white;
+  border-radius: 100%;
+}
+
+#gallery .flashit {
+  animation: flash linear 1s;
+}
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Centered text */
+#gallery .text-on-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 80%;
+}
+
+#gallery .text-on-image h1 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px #343131;
+}
+
+#gallery .text-on-image h1 .yellow-text {
+  color: var(--yellow);
+  text-shadow: 2px 2px 4px #343131;
+}
+
+#gallery .text-on-image p {
+  text-shadow: 2px 2px 4px #343131;
+  font-size: 1rem;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  /* padding-top: 100px; */ /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content  */
+.modal-content {
+  margin: auto;
+  /* display: block; */
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  text-align: center;
+}
+
+header #myModalSignUp .modal-content .title {
+  font-size: 3rem;
+  padding: 3rem;
+  font-weight: 900;
+  color: rgb(50, 47, 47);
+  font-family: "Titillium Web", sans-serif;
+}
+
+header #myModalSignUp .modal-content .paragraph {
+  padding: 3rem 10%;
+  color: var(--grey);
+}
+
+/* Add Animation */
+.modal-content {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: #f1f1f1;
+  background-color: rgb(50, 47, 47);
+  font-size: 35px;
+  line-height: 2.5rem;
+  transition: 0.3s;
+  width: 40px;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/*-----------------------------------------RESPONSIVE------------------------------------*/
+/* Bootstrap breakpoints */
+
+/*----------------------TABLET----------------------------*/
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  header #myModalSignUp .modal-content .paragraph {
+    font-size: 1.5rem;
+  }
+  #gallery .text-on-image p {
+    font-size: 1.2rem;
+  }
+  #gallery .text-on-image h1 {
+    font-size: 3.5rem;
+  }
+}
+/*-------------------------PC-------------------------------------*/
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #gallery .text-on-image h1 {
+    font-size: 3.7rem;
+  }
+  
+  #gallery .text-on-image {
+    min-width: 60%;
+    max-width: 70%;
+  }
+
+  header #myModalSignUp .modal-content .title {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  header #myModalSignUp .modal-content .paragraph {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 400px;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #gallery .text-on-image h1 {
+    font-size: 5rem;
+  }
+  #gallery .text-on-image p {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+  }
+
+  #gallery .text-on-image {
+    min-width: 50%;
+    max-width: 60%;
+  }
+}
+
+/* Estilos de formulario de contacto Ismael */
+#contact{
+  margin: 0 5%;
+  position: absolute;
+  top: 5%;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Poppins', sans-serif;
+  max-width: 1440px;
+  text-align: left;
+  
+}
+#contact .contact-inputs{
+  flex: 60%;
+  display: inline-block;
+  color: var(--dark);
+}
+#contact .contact-info{
+  flex: 40%;
+  margin: 0 2%;
+  display: inline-block;
+  align-items: left;
+  color: var(--grey);
+}
+/*-----------------------INPUTS*/
+#contact .contact-row{
+  width: 100%;
+  margin-bottom: 1em;
+}
+#contact .inputs-name{
+  width: 49%;
+  border: #EEEEEE 1px solid;
+  margin-right: 1%;
+  padding: 1.5em;
+  font-family: 'Poppins', sans-serif;
+}
+#contact .inputs-email{
+  width: 49%;
+  border: #EEEEEE 1px solid;
+  padding: 1.5em;
+  font-family: 'Poppins', sans-serif;
+}
+#contact .inputs-phone{
+  width: 49%;
+  border: #EEEEEE 1px solid;
+  margin-right: 1%;
+  padding: 1.5em;
+  font-family: 'Poppins', sans-serif;
+}
+#contact .inputs-subject{
+  width: 49%;
+  border: #EEEEEE 1px solid;
+  padding: 1.5em;
+  font-family: 'Poppins', sans-serif;
+}
+#contact .inputs-area{
+  width: 100%;
+  border: #EEEEEE 1px solid;
+  margin-bottom: 1em;
+  font-family:  'Poppins', sans-serif;
+  padding: 1.5em;
+}
+#contact .inputs-button{
+  border: var(--yellow) 1px solid;
+  background-color: var(--yellow);
+  padding: 1.1em 2em;
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  margin-left: 0;
+}
+/*-----------------------INFO-----------------*/
+#contact .contact-info-emojis-p{
+  margin-bottom: 3em;
+}
+#contact .contact-info-1{
+  display: flex;
+  margin-bottom: 1.3em;
+}
+#contact .fa-solid{
+  margin-right: 1em;
+  color: var(--yellow);
+}
+#contact .info-p-emoji{
+  line-height: 15px;
+  font-size: 0.9em;
+}
+#contact .info-lorem{
+  font-size: 0.9em;
+  line-height: 23px;
+}
+#contact .info-ye{
+  color: var(--yellow);
+}
+#contact .info-underline{
+  text-decoration: underline;
+}
+#contact .info-black, #contact .info-ye{
+  font-weight: 700;
+}
+/*-----------------------------------------RESPONSIVE------------------------------------*/
+/* Bootstrap breakpoints */
+/* Small devices (landscape phones, 390px and up) */
+@media (max-width: 715px) {
+  #contact{
+      display:block;
+  }
+  #contact .contact-inputs{
+      display: inline-block;
+  }
+  #contact .contact-info{
+      margin: 10% 2% 0 2%;
+      display: inline-block;
+      align-items: left;
+      color: var(--grey);
+  }
+  /*-----------------------INPUTS*/
+  #contact .inputs-email{
+      float: right;
+  }
+  #contact .inputs-subject{
+      float: right;
+  }
+  /*-----------------------INFO-----------------*/
+  #contact .contact-info{
+      margin: 10% 3% 0 3%;
+  }
+}
+
+/* CSS login form */
+#form{
+  position: absolute;
+  top: 5%;
+  text-align: center;
+  
+  }
+#form > h1 {
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  font-size: 2.8rem;
+  color: var(--dark);
+}
+
+
+#form form input:nth-child(1),
+input:nth-child(2) {
+  border: 1.6px solid rgb(188, 181, 181);
+  width: 85%;
+  padding: 1.2em;
+  font-family: inherit;
+  margin: 1.3em auto;
+ 
+}
+input::placeholder {
+  
+  color: rgb(188, 181, 181);
+  font-weight: bold;
+  font-size: small;
+}
+
+/* Botón Sign in */
+#form .input-login button {
+  background-color: var(--yellowHack);
+  padding: 1.2em 2.3em;
+  color: var(--white);
+  font-size: 1rem; 
+  width: 30%;
+  font-weight: bold;
+  margin-left: 8%;
+  }
+
+
+#rememberme {
+  width: 100%;
+  text-align: left;
+  color: grey;
+  margin-left: 8%;
+  font-size: 1.1rem;
+  margin-top: 1em;
+  margin-bottom: 1.2em;
+}
+#rememberme .fa-square{
+  margin-right:.5em ;
+}
+.input-login{
+  margin-top: 1em;
+  text-align: left;
+}
+
+/* Enlaces Lost Password y Create an Account */
+#password-account {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 100%;
+  padding: 1.5em 0;
+}
+#password-account a:nth-child(1) {
+  text-decoration: none;
+  color: var(--black);
+}
+#password-account a:nth-child(2) {
+  text-decoration: none;
+  color: var(--grey);
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #form {
+    position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+}
+
+
+
+
+
+
+/* CSS ISMAEL  GAMERS*/
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Titillium Web', sans-serif; */
+
+:root {
+  font-size: 0.875rem;
+  font-family: 'Poppins', sans-serif;
+  --blue: #0d6efd;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #d63384;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #198754;
+  --teal: #20c997;
+  --cyan: #0dcaf0;
+  --dark: #292a2b;
+  --black: #000;
+  --white: #fff;
+  --grey: #929292;
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: inherit;
+  outline: 0 none;
+}
+#gamers{
+  margin: 5%;
+}
+.gamers-h2{
+  font-family: 'Titillium Web', sans-serif;
+  color: var(--dark);
+  font-size: 3em;
+  line-height: 1em;
+}
+.gamers-yellow{
+  color: var(--yellow);
+}
+.gamers-p{
+  margin-top: 1em;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 2em;
+  width: 100%;
+  color: var(--grey);
+}
+/*--------------------------Imagenes*/
+.gamers-player1{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+}
+
+.gamers-player1-h3{
+  position: absolute;
+  top: 70%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+  /* left: 50%; */
+  /* transform: translate(-50%, -70%); */
+  transition: all 0.3s ease;
+  
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.3em;
+  color: var(--dark);
+}
+
+.gamers-player1-h3 div{
+  width: 9em;
+  padding: 10px 40px;
+  margin: 0 auto;
+  background-color: var(--yellow);
+}
+
+.gamers-caption{
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease;
+}
+.gamers-icon{
+  width: 30%;
+  height: 30%;
+}
+.gamers-img-player1{
+  width: 100%;
+  height: 100%;
+  box-shadow: 3px 3px 5px var(--black);
+}
+.gamers-plus{
+  display: none;
+}
+.gamers-player1:hover .gamers-player1-h3{
+ top: 100%;
+}
+.gamers-player1:hover .gamers-caption{
+  top: 0;
+}
+/*---------------------hover*/
+.gamers-img-player1-2{
+  transition: 0.5s ease;
+  filter: brightness(40%);
+  width: 100%;
+  height: 100%;
+}
+.gamers-plus-ye{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 10px;
+  background-color: var(--yellow);
+  color: var(--dark);
+  border: var(--yellow) 1px solid;
+  border-radius: 50%;
+}
+.gamers-player1-h3-hide{
+  display: none;
+}
+.gamer-plus-wh{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 10px;
+  background-color: var(--white);
+  font-size: 1.3em;
+  color: var(--dark);
+  border: var(--white) 1px solid;
+  border-radius: 50%;
+}
+
+/*-----------------------------------------RESPONSIVE------------------------------------*/
+/* Bootstrap breakpoints */
+/* Small devices (landscape phones, 390px and up) */
+@media (min-width: 390px) {
+}
+/*----------------------TABLET----------------------------*/
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #gamers{
+    margin: 2% 2.5% 2% 2.5%;
+  }
+  .gamers-p{
+    font-size: 1.3em;
+  }
+  /*---------------------Imagenes*/
+  .gamers-cont{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 97%;
+  margin: 1% 2.5% 2% 2%;
+  }
+  .gamers-player1{
+    flex: 28%;
+    width: 100%;
+  }
+  .gamers-player1:first-of-type{
+    margin-right: 2%;
+  } 
+  .gamers-player1:last-of-type{
+    margin-left: 2%;
+  }
+  .gamers-player1-h3{
+    font-size: 1.5em;
+  }
+}
+/*-------------------------PC-------------------------------------*/
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #gamers{
+    margin: 2% auto;
+    max-width: 1440px;
+  }
+  .gamers-p{
+    font-size: 1.3em;
+  }
+  /*---------------------Imagenes*/
+  .gamers-cont{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 97%;
+  margin: 1% 2.5% 2% 2%;
+  }
+  .gamers-player1{
+    flex: 28%;
+    width: 100%;
+  }
+  .gamers-player1:first-of-type{
+    margin-right: 2%;
+  } 
+  .gamers-player1:last-of-type{
+    margin-left: 2%;
+  }
+  .gamers-player1-h3{
+  font-size: 1.5em;
+  }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
@@ -55,4 +1019,167 @@ font-family: 'Titillium Web', sans-serif; */
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
   /* here your code */
+}
+
+
+/* CSS DANI Y DAVID */
+#cards-header {
+  width: 90%;
+  margin-left: 2em;
+}
+
+#h3-title {
+  color: var(--black);
+  font-size: 2.5em;
+  font-family: titillium web, sans-serif;
+}
+
+#games-color {
+  color: var(--yellowHack);
+}
+
+#p-title {
+  font-family: Poppins, sans-serif;
+  color: var(--grey);
+  width: 100%;
+}
+
+#cards {
+  margin-left: 1.5em;
+  margin-right: 1em;
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#game-card {
+  margin-top: 2em;
+  justify-content: space-around;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#card-image {
+  object-fit: cover;
+  width: 100%;
+}
+
+#h2-card {
+  margin-top: 3%;
+  font-family: titillium web, sans-serif;
+  margin-left: 6%;
+  color: var(--dark);
+  font-size: 1.7em;
+}
+#h2-card:hover {
+  color: var(--yellowHack);
+}
+
+span.icon {
+  margin-left: 6%;
+}
+
+span.fa-text {
+  font-size: 0.8em;
+  font-weight: 900;
+  color: var(--grey);
+  font-family: Poppins, sans-serif;
+}
+
+span.fa-text:hover {
+  color: var(--yellowHack);
+}
+
+#p-card {
+  margin-top: 3%;
+  margin-left: 3%;
+  padding: 3%;
+  font-size: 1.1em;
+  color: var(--grey);
+  padding-bottom: 5%;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #cards-header {
+    width: 65vh;
+    font-size: 18px;
+    margin-left: 1.8em;
+    color: var(--grey);
+  }
+  #cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1.6em;
+    width: 100%;
+  }
+  #game-card {
+    width: 30%;
+    margin-left: 1.5%;
+    margin-right: 0.5%;
+  }
+  #p-card {
+    font-size: 1.3em;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #cards-header {
+    width: 95%;
+    font-size: 1.5em;
+    margin: 1% auto;
+    color: var(--grey);
+    max-width: 1440px;
+  }
+  #cards {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 3%;
+  }
+}
+
+/* CSS Benjamin */
+
+#footer {
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-top: 2em;
+  padding: .5rem;
+}
+#footer > h2 {
+  font-family: "Titillium Web", sans-serif;
+}
+#footer > h3 {
+  font-family: "Poppins", sans-serif;
+}
+#footer > h2 > span:nth-child(1) {
+  color: var(--white);
+}
+#footer > h2 > span:nth-child(2) {
+  color: var(--yellowHack);
+}
+#footer > h3 > span:nth-child(1) {
+  color: var(--white);
+}
+#footer > h3 > span:nth-child(2) {
+  color: var(--yellowHack);
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  #footer {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #footer {
+    font-size: 1.7rem;
+  }
 }
