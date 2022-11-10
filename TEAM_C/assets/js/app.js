@@ -65,19 +65,43 @@ window.addEventListener("load", () => {
   }
 
   // Get the modal
-  let modal = document.getElementById("myModalSignUp");
+  let modalSignUp = document.getElementById("myModalSignUp");
   let signUp = document.getElementById("sign-up");
   signUp.addEventListener("click", () => {
-    modal.style.display = "block";
+    modalSignUp.style.display = "block";
     console.log("working");
   });
 
   // Get the <span> element that closes the modal
-  let closeBtn = document.getElementsByClassName("close")[0];
+  let closeSignUp = document.getElementsByClassName("close")[0];
 
   // When the user clicks on <span> (x), close the modal
 
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none";
+  closeSignUp.addEventListener("click", () => {
+    modalSignUp.style.display = "none";
   });
+
+  // Get the modal
+  let modalContact = document.getElementById("myModalContact");
+  let contact = document.getElementById("contact-window");
+  contact.addEventListener("click", () => {
+    modalContact.style.display = "block";
+    console.log("working");
+  });
+
+  // Get the <span> element that closes the modal
+  let closeContact = document.getElementsByClassName("close")[1];
+
+  // When the user clicks on <span> (x), close the modal
+
+  closeContact.addEventListener("click", () => {
+    modalContact.style.display = "none";
+  });
+
+
+
+  //Closing brace window load
 });
+
+
+

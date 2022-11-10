@@ -37,7 +37,7 @@
                 <li><a href="#">About</a></li>
                 <li><a href="#">Games</a></li>
                 <li><a href="#">eSport</a></li>
-                <li><a href="#">Contact</a></li>
+                <li id="contact-window"><a href="#">Contact</a></li>
               </ul>
               <ul class="icons-menu">
                 <li>
@@ -57,7 +57,7 @@
                 </li>
                 <div class="btn-container">
                   <button class="btn-menu">LOGIN</button>
-                  <button class="btn-menu"  id="sign-up">SIGN UP</button>
+                  <button class="btn-menu" id="sign-up">SIGN UP</button>
                 </div>
               </ul>
             </div>
@@ -86,15 +86,48 @@
         </div>
       </div>
 
-      <!-- The Modal -->
+      <!-- The Modal for Sign UP-->
       <div id="myModalSignUp" class="modal">
-
         <div class="modal-content">
           <span class="close">&times;</span>
           <h1 class="title">SIGN UP</h1>
           <p class="paragraph">New mempership are not allowed</p>
         </div>
+      </div>
+
+      <!-- The Modal for Contact-->
+      <div id="myModalContact" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <section id="contact">
+            <div class="contact-inputs">
+                <div class="contact-row">
+                    <input type="text" class="inputs-name" placeholder="Name">
+                    <input type="text" class="inputs-email" placeholder="Email">
+                </div>
+                <div class="contact-row">
+                    <input type="text" class="inputs-phone"
+                    placeholder="Phone Number">
+                    <input type="text" class="inputs-subject" placeholder="Subject">
+                </div>
+                <textarea name="inputs-area" class="inputs-area" cols="30" rows="7" placeholder="Message"></textarea>  </div>
+                <button class="inputs-button">SUBMIT</button>
+          
+            <div class="contact-info">
+                <div class="contact-info-emojis-p">
+                <div class="contact-info-1"><i class="fa-solid fa-location-dot "></i><p class="info-p-emoji">C. Compositor Lehmberg Ruiz 17, Málaga</p></div>
+                <div class="contact-info-1"><i class="fa-solid fa-envelope"></i><p class="info-p-emoji">info@codespaceacademy.com</p></div>
+                <div class="contact-info-1"><i class="fa-solid fa-phone"></i><p class="info-p-emoji">682 82 70 17</p></div>
+                <div class="contact-info-1"><i class="fa-solid fa-blender-phone"></i><p class="info-p-emoji">952 300 426</p></div></div>
+                <p class="info-lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="info-black">Ipsum, quas possimus, dolor</span>  vel optio deserunt dolore excepturi officia maxime reiciendis consectetur esse autem deleniti totam, molestias eum nobis <span class="info-underline">pariatur eaque voluptatibus</span> repellendus? Sit inventore facilis deserunt modi vero nobis culpa adipisci <span class="info-ye">hic magnam molestias dolor doloremque,</span> odio, reprehenderit ab officiis.</p>
+            </div>
+        </section>
         </div>
+      </div>
+
+
+
+    </header>
   </body>
   <script src="assets/js/app.js"></script>
 </html>

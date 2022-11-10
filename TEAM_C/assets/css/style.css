@@ -442,7 +442,7 @@ header
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  overflow: hidden; 
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
 }
@@ -450,7 +450,7 @@ header
 /* Modal Content  */
 .modal-content {
   margin: auto;
-  display: block;
+  /* display: block; */
   width: 100vw;
   height: 100vh;
   background: white;
@@ -502,9 +502,10 @@ header #myModalSignUp .modal-content .paragraph {
   right: 0px;
   color: #f1f1f1;
   background-color: rgb(50, 47, 47);
-  font-size: 40px;
+  font-size: 35px;
+  line-height: 2.5rem;
   transition: 0.3s;
-  width: 50px;
+  width: 40px;
 }
 
 .close:hover,
@@ -574,7 +575,136 @@ header #myModalSignUp .modal-content .paragraph {
   }
 }
 
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-  /* here your code */
+/* Estilos de formulario de contacto Ismael */
+
+#contact{
+  margin: 0 5%;
+  position: absolute;
+  top: 5%;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Poppins', sans-serif;
+  max-width: 1440px;
+  text-align: left;
+  
 }
+
+
+#contact .contact-inputs{
+  flex: 60%;
+  display: inline-block;
+  color: var(--dark);
+}
+#contact .contact-info{
+  flex: 40%;
+  margin: 0 2%;
+  display: inline-block;
+  align-items: left;
+  color: var(--grey);
+}
+/*-----------------------INPUTS*/
+#contact .contact-row{
+  width: 100%;
+  margin-bottom: 1em;
+}
+#contact .inputs-name{
+  width: 49%;
+  border: #EEEEEE 1px solid;
+  margin-right: 1%;
+  padding: 1.5em;
+  font-family: 'Poppins', sans-serif;
+}
+#contact .inputs-email{
+  width: 49%;
+  border: #EEEEEE 1px solid;
+  padding: 1.5em;
+  font-family: 'Poppins', sans-serif;
+}
+#contact .inputs-phone{
+  width: 49%;
+  border: #EEEEEE 1px solid;
+  margin-right: 1%;
+  padding: 1.5em;
+  font-family: 'Poppins', sans-serif;
+}
+#contact .inputs-subject{
+  width: 49%;
+  border: #EEEEEE 1px solid;
+  padding: 1.5em;
+  font-family: 'Poppins', sans-serif;
+}
+#contact .inputs-area{
+  width: 100%;
+  border: #EEEEEE 1px solid;
+  margin-bottom: 1em;
+  font-family:  'Poppins', sans-serif;
+  padding: 1.5em;
+}
+#contact .inputs-button{
+  border: var(--yellow) 1px solid;
+  background-color: var(--yellow);
+  padding: 1.1em 2em;
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+}
+/*-----------------------INFO-----------------*/
+#contact .contact-info-emojis-p{
+  margin-bottom: 3em;
+}
+#contact .contact-info-1{
+  display: flex;
+  margin-bottom: 1.3em;
+}
+#contact .fa-solid{
+  margin-right: 1em;
+  color: var(--yellow);
+}
+#contact .info-p-emoji{
+  line-height: 15px;
+  font-size: 0.9em;
+}
+#contact .info-lorem{
+  font-size: 0.9em;
+  line-height: 23px;
+}
+#contact .info-ye{
+  color: var(--yellow);
+}
+#contact .info-underline{
+  text-decoration: underline;
+}
+#contact .info-black, #contact .info-ye{
+  font-weight: 700;
+}
+/*-----------------------------------------RESPONSIVE------------------------------------*/
+/* Bootstrap breakpoints */
+/* Small devices (landscape phones, 390px and up) */
+@media (max-width: 715px) {
+  #contact{
+      display:block;
+  }
+  #contact .contact-inputs{
+      display: inline-block;
+  }
+  #contact .contact-info{
+      margin: 10% 2% 0 2%;
+      display: inline-block;
+      align-items: left;
+      color: var(--grey);
+  }
+  /*-----------------------INPUTS*/
+  #contact .inputs-email{
+      float: right;
+  }
+  #contact .inputs-subject{
+      float: right;
+  }
+  /*-----------------------INFO-----------------*/
+  #contact .contact-info{
+      margin: 10% 3% 0 3%;
+  }
+}
+/*----------------------TABLET----------------------------*/
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
