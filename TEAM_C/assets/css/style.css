@@ -15,6 +15,7 @@ font-family: 'Titillium Web', sans-serif; */
   --teal: #20c997;
   --cyan: #0dcaf0;
   --dark: #292a2b;
+  --dark: #292a2b;
   --black: #000;
   --white: #fff;
   --yellowHack: #ffc311;
@@ -228,10 +229,6 @@ header
     transform: translateX(-5%);
   }
 
-  /* header > div > div > nav > div.main-menu-show {
-    transform: translateX(0);
-    z-index: 1;
-  } */
   header > div > div > nav > div > div.close-menu {
     display: none;
   }
@@ -426,12 +423,6 @@ header
   text-shadow: 2px 2px 4px #343131;
 }
 
-/* Provisional button */
-#login {
-  border: #000 solid 1px;
-  padding: 2em;
-}
-
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -442,7 +433,7 @@ header
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: hidden; 
+  overflow:hidden; 
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
 }
@@ -528,13 +519,19 @@ header #myModalSignUp .modal-content .paragraph {
   /* here your code */
 }
 
+/*-----------------------------------------RESPONSIVE------------------------------------*/
+/* Bootstrap breakpoints */
+/* Small devices (landscape phones, 390px and up) */
+@media (min-width: 390px) {
+}
+/*----------------------TABLET----------------------------*/
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   header #myModalSignUp .modal-content .paragraph {
     font-size: 1.5rem;
   }
 }
-
+/*-------------------------PC-------------------------------------*/
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   #gallery .text-on-image h1 {
@@ -708,3 +705,167 @@ header #myModalSignUp .modal-content .paragraph {
 /*----------------------TABLET----------------------------*/
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {}
+
+#gamers{
+  margin: 5%;
+}
+.gamers-h2{
+  font-family: 'Titillium Web', sans-serif;
+  color: var(--dark);
+  font-size: 3em;
+  line-height: 1em;
+}
+.gamers-yellow{
+  color: var(--yellow);
+}
+.gamers-p{
+  margin-top: 1em;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 2em;
+  width: 100%;
+  color: var(--grey);
+}
+/*--------------------------Imagenes*/
+.gamers-player1{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 4em;
+}
+.gamers-player1-h3{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  padding: 10px 40px;
+  background-color: var(--yellow);
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.3em;
+  color: var(--dark);
+}
+.gamers-img-player1{
+  width: 100%;
+  height: 100%;
+  box-shadow: 3px 3px 5px var(--black);
+}
+.gamers-plus{
+  display: none;
+}
+/*---------------------hover*/
+.gamers-img-player1-2{
+  transition: 0.5s ease;
+  filter: brightness(40%);
+  width: 100%;
+  height: 100%;
+}
+.gamers-player1-h3-hide{
+  display: none;
+}
+.gamers-plus-ye{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 10px;
+  background-color: var(--yellow);
+  font-size: 1.3em;
+  color: var(--dark);
+  border: var(--yellow) 1px solid;
+  border-radius: 50%;
+}
+.gamers-player1-h3-hide{
+  display: none;
+}
+.gamer-plus-wh{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 10px;
+  background-color: var(--white);
+  font-size: 1.3em;
+  color: var(--dark);
+  border: var(--white) 1px solid;
+  border-radius: 50%;
+}
+
+/*-----------------------------------------RESPONSIVE------------------------------------*/
+/* Bootstrap breakpoints */
+/* Small devices (landscape phones, 390px and up) */
+@media (min-width: 390px) {
+}
+/*----------------------TABLET----------------------------*/
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #gamers{
+    margin: 2% 2.5% 2% 2.5%;
+  }
+  .gamers-p{
+    font-size: 1.3em;
+  }
+  /*---------------------Imagenes*/
+  .gamers-cont{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 97%;
+  margin: 1% 2.5% 2% 2%;
+  }
+  .gamers-player1{
+    flex: 28%;
+    width: 100%;
+  }
+  .gamers-player1:first-of-type{
+    margin-right: 2%;
+  } 
+  .gamers-player1:last-of-type{
+    margin-left: 2%;
+  }
+  .gamers-player1-h3{
+    font-size: 1.5em;
+    width: 9em;
+  }
+}
+/*-------------------------PC-------------------------------------*/
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #gamers{
+    margin: 2% auto;
+    max-width: 1440px;
+  }
+  .gamers-p{
+    font-size: 1.3em;
+  }
+  /*---------------------Imagenes*/
+  .gamers-cont{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 97%;
+  margin: 1% 2.5% 2% 2%;
+  }
+  .gamers-player1{
+    flex: 28%;
+    width: 100%;
+  }
+  .gamers-player1:first-of-type{
+    margin-right: 2%;
+  } 
+  .gamers-player1:last-of-type{
+    margin-left: 2%;
+  }
+  .gamers-player1-h3{
+  font-size: 1.5em;
+  width: 9em;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* here your code */
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  /* here your code */
+}
