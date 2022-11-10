@@ -949,11 +949,6 @@ span.fa-text:hover{
   padding-bottom: 5%;
 }
 
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-}
-
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   #cards-header {
@@ -995,7 +990,36 @@ span.fa-text:hover{
     margin: 0 auto;
     padding-bottom: 3%;
   }
-
 }
+
+/* CSS Benjamin */
+
+#footer {
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+}
+#footer > h2 {
+  font-family: "Titillium Web", sans-serif;
+}
+#footer > h3 {
+  font-family: "Poppins", sans-serif;
+}
+#footer > h2 > span:nth-child(1) {
+  color: var(--white);
+}
+#footer > h2 > span:nth-child(2) {
+  color: var(--yellowHack);
+}
+#footer > h3 > span:nth-child(1) {
+  color: var(--white);
+}
+#footer > h3 > span:nth-child(2) {
+  color: var(--yellowHack);
+  text-decoration: underline;
+}
+
 
 
