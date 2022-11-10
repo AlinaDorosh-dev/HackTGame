@@ -54,18 +54,45 @@ font-family: 'Titillium Web', sans-serif; */
   position: relative;
   display: inline-block;
   text-align: center;
-  margin-bottom: 4em;
+  overflow: hidden;
 }
+
 .gamers-player1-h3{
   position: absolute;
   top: 70%;
-  left: 50%;
-  transform: translate(-50%, -70%);
-  padding: 10px 40px;
-  background-color: var(--yellow);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+  /* left: 50%; */
+  /* transform: translate(-50%, -70%); */
+  transition: all 0.3s ease;
+  
   font-family: 'Titillium Web', sans-serif;
   font-size: 1.3em;
   color: var(--dark);
+}
+
+.gamers-player1-h3 div{
+  width: 9em;
+  padding: 10px 40px;
+  margin: 0 auto;
+  background-color: var(--yellow);
+}
+
+.gamers-caption{
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease;
+}
+.gamers-icon{
+  width: 30%;
+  height: 30%;
 }
 .gamers-img-player1{
   width: 100%;
@@ -75,15 +102,18 @@ font-family: 'Titillium Web', sans-serif; */
 .gamers-plus{
   display: none;
 }
+.gamers-player1:hover .gamers-player1-h3{
+ top: 100%;
+}
+.gamers-player1:hover .gamers-caption{
+  top: 0;
+}
 /*---------------------hover*/
 .gamers-img-player1-2{
   transition: 0.5s ease;
   filter: brightness(40%);
   width: 100%;
   height: 100%;
-}
-.gamers-player1-h3-hide{
-  display: none;
 }
 .gamers-plus-ye{
   position: absolute;
@@ -92,7 +122,6 @@ font-family: 'Titillium Web', sans-serif; */
   transform: translate(-50%, -50%);
   padding: 10px 10px;
   background-color: var(--yellow);
-  font-size: 1.3em;
   color: var(--dark);
   border: var(--yellow) 1px solid;
   border-radius: 50%;
@@ -147,7 +176,6 @@ font-family: 'Titillium Web', sans-serif; */
   }
   .gamers-player1-h3{
     font-size: 1.5em;
-    width: 9em;
   }
 }
 /*-------------------------PC-------------------------------------*/
@@ -180,7 +208,6 @@ font-family: 'Titillium Web', sans-serif; */
   }
   .gamers-player1-h3{
   font-size: 1.5em;
-  width: 9em;
   }
 }
 
