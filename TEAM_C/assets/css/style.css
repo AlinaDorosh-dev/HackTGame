@@ -578,24 +578,23 @@ header #myModalSignUp .modal-content .paragraph {
 }
 
 /* Estilos de formulario de contacto Ismael */
-
-#contact {
+#contact{
   margin: 0 5%;
   position: absolute;
   top: 5%;
   display: flex;
   flex-direction: row;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   max-width: 1440px;
   text-align: left;
+  
 }
-
-#contact .contact-inputs {
+#contact .contact-inputs{
   flex: 60%;
   display: inline-block;
   color: var(--dark);
 }
-#contact .contact-info {
+#contact .contact-info{
   flex: 40%;
   margin: 0 2%;
   display: inline-block;
@@ -603,109 +602,110 @@ header #myModalSignUp .modal-content .paragraph {
   color: var(--grey);
 }
 /*-----------------------INPUTS*/
-#contact .contact-row {
+#contact .contact-row{
   width: 100%;
   margin-bottom: 1em;
 }
-#contact .inputs-name {
+#contact .inputs-name{
   width: 49%;
-  border: #eeeeee 1px solid;
+  border: #EEEEEE 1px solid;
   margin-right: 1%;
   padding: 1.5em;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
-#contact .inputs-email {
+#contact .inputs-email{
   width: 49%;
-  border: #eeeeee 1px solid;
+  border: #EEEEEE 1px solid;
   padding: 1.5em;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
-#contact .inputs-phone {
+#contact .inputs-phone{
   width: 49%;
-  border: #eeeeee 1px solid;
+  border: #EEEEEE 1px solid;
   margin-right: 1%;
   padding: 1.5em;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
-#contact .inputs-subject {
+#contact .inputs-subject{
   width: 49%;
-  border: #eeeeee 1px solid;
+  border: #EEEEEE 1px solid;
   padding: 1.5em;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
-#contact .inputs-area {
+#contact .inputs-area{
   width: 100%;
-  border: #eeeeee 1px solid;
+  border: #EEEEEE 1px solid;
   margin-bottom: 1em;
-  font-family: "Poppins", sans-serif;
+  font-family:  'Poppins', sans-serif;
   padding: 1.5em;
 }
-#contact .inputs-button {
+#contact .inputs-button{
   border: var(--yellow) 1px solid;
   background-color: var(--yellow);
   padding: 1.1em 2em;
   color: var(--white);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 800;
+  margin-left: 0;
 }
 /*-----------------------INFO-----------------*/
-#contact .contact-info-emojis-p {
+#contact .contact-info-emojis-p{
   margin-bottom: 3em;
 }
-#contact .contact-info-1 {
+#contact .contact-info-1{
   display: flex;
   margin-bottom: 1.3em;
 }
-#contact .fa-solid {
+#contact .fa-solid{
   margin-right: 1em;
   color: var(--yellow);
 }
-#contact .info-p-emoji {
+#contact .info-p-emoji{
   line-height: 15px;
   font-size: 0.9em;
 }
-#contact .info-lorem {
+#contact .info-lorem{
   font-size: 0.9em;
   line-height: 23px;
 }
-#contact .info-ye {
+#contact .info-ye{
   color: var(--yellow);
 }
-#contact .info-underline {
+#contact .info-underline{
   text-decoration: underline;
 }
-#contact .info-black,
-#contact .info-ye {
+#contact .info-black, #contact .info-ye{
   font-weight: 700;
 }
 /*-----------------------------------------RESPONSIVE------------------------------------*/
 /* Bootstrap breakpoints */
 /* Small devices (landscape phones, 390px and up) */
 @media (max-width: 715px) {
-  #contact {
-    display: block;
+  #contact{
+      display:block;
   }
-  #contact .contact-inputs {
-    display: inline-block;
+  #contact .contact-inputs{
+      display: inline-block;
   }
-  #contact .contact-info {
-    margin: 10% 2% 0 2%;
-    display: inline-block;
-    align-items: left;
-    color: var(--grey);
+  #contact .contact-info{
+      margin: 10% 2% 0 2%;
+      display: inline-block;
+      align-items: left;
+      color: var(--grey);
   }
   /*-----------------------INPUTS*/
-  #contact .inputs-email {
-    float: right;
+  #contact .inputs-email{
+      float: right;
   }
-  #contact .inputs-subject {
-    float: right;
+  #contact .inputs-subject{
+      float: right;
   }
   /*-----------------------INFO-----------------*/
-  #contact .contact-info {
-    margin: 10% 3% 0 3%;
+  #contact .contact-info{
+      margin: 10% 3% 0 3%;
   }
 }
+
 
 /* CSS ISMAEL  GAMERS*/
 
