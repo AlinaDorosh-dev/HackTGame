@@ -94,6 +94,20 @@ window.addEventListener("load", () => {
     modalContact.style.display = "none";
   });
 
+  //Login js
+  let modalLogin = document.getElementById("myModalLogin");
+  let login = document.getElementById("login-window");
+  login.addEventListener("click", () => {
+    modalLogin.style.display = "block";
+    
+  });
+
+  let closeLogin = document.getElementsByClassName("close")[2];
+
+  closeLogin.addEventListener("click", () => {
+    modalLogin.style.display = "none";
+  });
+
   // JS Ismael
 
   

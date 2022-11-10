@@ -56,7 +56,7 @@
                   <a href="#"><i class="fa-brands fa-youtube"></i></a>
                 </li>
                 <div class="btn-container">
-                  <button class="btn-menu">LOGIN</button>
+                  <button class="btn-menu" id="login-window">LOGIN</button>
                   <button class="btn-menu" id="sign-up">SIGN UP</button>
                 </div>
               </ul>
@@ -124,6 +124,33 @@
         </section>
         </div>
       </div>
+
+<!-- The Modal for Login-->
+<div id="myModalLogin" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="form">
+      <h1>LOGIN</h1>
+      <form action="login">
+        <div class="div textinputs">
+          <input type="text" name="username" placeholder="Username" />
+          <input type="password" placeholder="Password" />
+        </div>
+        <div id="rememberme">
+          <p><i class="fa-regular fa-square"></i> Remember Me</p> 
+        </div>
+<div class="input-login"><button>SIGN IN </button></div>
+        
+      </form>
+      <div id="password-account">
+        <a href="http://">Lost Password?</a>
+        <a href="http://">Create an Account</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
     </header>
 
 
