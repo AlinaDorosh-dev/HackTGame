@@ -34,12 +34,14 @@ font-family: 'Titillium Web', sans-serif; */
 }
 #form {
   padding: 2em;
-}
+} 
+/* h1 LOGIN */
 #form > h1 {
+  font-family: 'Titillium Web', sans-serif;
   text-align: center;
-  font-size: 3rem;
-  font-weight: bolder;
+  font-size: 2.8rem;
   margin: 3% 0;
+  color: var(--dark);
 }
 #form > form {
   background-color: var(--white);
@@ -51,8 +53,6 @@ input:nth-child(2) {
   width: 100%;
   padding: 1.2em;
   font-family: inherit;
-  /* font-weight: light; */
-  /* font-size: 100; */
 }
 /* Margen al Username */
 #form form input:nth-child(1) {
@@ -71,7 +71,7 @@ input::placeholder {
   align-items: center;
   justify-content: flex-start;
   color: var(--grey);
-  margin: 1% 0;
+  margin: 3% 0;
 }
 /* Botón Remember y checkout */
 #rememberme input {
@@ -82,7 +82,7 @@ input::placeholder {
 /* Botón Sign in */
 #form input:nth-child(3) {
   background-color: var(--yellowHack);
-  padding: 1.5em 2.5em;
+  padding: 1.2em 2.3em;
   color: var(--white);
   font-size: 1rem;
 }
@@ -103,6 +103,7 @@ input::placeholder {
   color: var(--grey);
 }
 
+
 /* Bootstrap breakpoints */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -111,7 +112,9 @@ input::placeholder {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  /* here your code */
+  #form {
+    padding: 10em;  
+      }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -125,6 +128,8 @@ input::placeholder {
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-  /* here your code */
+@media (min-width: 1440px) {
+  #form {
+padding: 30em;  
+  }
 }
