@@ -702,18 +702,20 @@ header #myModalSignUp .modal-content .paragraph {
       margin: 10% 3% 0 3%;
   }
 }
-/*----------------------TABLET----------------------------*/
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
+
+
+/* CSS ISMAEL  GAMERS*/
 
 #gamers{
   margin: 5%;
+  
 }
 .gamers-h2{
   font-family: 'Titillium Web', sans-serif;
-  color: var(--dark);
+  color: black;
   font-size: 3em;
   line-height: 1em;
+  
 }
 .gamers-yellow{
   color: var(--yellow);
@@ -724,6 +726,7 @@ header #myModalSignUp .modal-content .paragraph {
   margin-bottom: 2em;
   width: 100%;
   color: var(--grey);
+  
 }
 /*--------------------------Imagenes*/
 .gamers-player1{
@@ -791,9 +794,7 @@ header #myModalSignUp .modal-content .paragraph {
 
 /*-----------------------------------------RESPONSIVE------------------------------------*/
 /* Bootstrap breakpoints */
-/* Small devices (landscape phones, 390px and up) */
-@media (min-width: 390px) {
-}
+
 /*----------------------TABLET----------------------------*/
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -833,8 +834,12 @@ header #myModalSignUp .modal-content .paragraph {
     margin: 2% auto;
     max-width: 1440px;
   }
+  .gamers-h2{
+    padding: 0 1.5rem
+  }
   .gamers-p{
     font-size: 1.3em;
+    padding: 0 1.5rem
   }
   /*---------------------Imagenes*/
   .gamers-cont{
@@ -860,12 +865,3 @@ header #myModalSignUp .modal-content .paragraph {
   }
 }
 
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  /* here your code */
-}
-
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-  /* here your code */
-}
