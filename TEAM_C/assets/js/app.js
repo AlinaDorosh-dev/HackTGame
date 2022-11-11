@@ -4,7 +4,7 @@ window.addEventListener("load", () => {
   let closeMenu = document.body.querySelector(".icon-close-menu");
   let title = document.body.querySelector(".main-nav");
   let ubicationMain = window.pageYOffset;
-  let mobileVersion = window.matchMedia("(max-width: 768px)");
+  let mobileVersion = window.matchMedia("(max-width: 992px)");
 
   //Hamburguer Menu
   iconMenu.addEventListener("click", () => {
