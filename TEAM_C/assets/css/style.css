@@ -169,12 +169,19 @@ header
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  
+  html {
+    width: 100vw;
+  }
+
   header > div > div > nav.main-nav > div.main-menu > .icons-menu > li > a {
     margin-right: 4em;
   }
   header > div > div > nav > div.toggle-menu {
     right: 2rem;
+  }
+  header > div > div > nav.main-nav > div.main-menu > ul.links-menu {
+    list-style: none;
+    margin: 0.5em 1em 0;
   }
   /* header > div > div > nav.main-nav {
     width: 100vw;
@@ -647,7 +654,7 @@ header #myModalSignUp .modal-content .paragraph {
 }
 /*-----------------------INFO-----------------*/
 #contact .contact-info-emojis-p {
-  margin-bottom: 3em;
+  margin: 2em 0;
 }
 #contact .contact-info-1 {
   display: flex;
@@ -713,7 +720,8 @@ header #myModalSignUp .modal-content .paragraph {
 #form > h1 {
   font-family: "Titillium Web", sans-serif;
   text-align: center;
-  font-size: 2.8rem;
+  font-size: 3rem;
+  margin-bottom: .5em;
   color: var(--dark);
 }
 
@@ -724,6 +732,7 @@ input:nth-child(2) {
   padding: 1.2em;
   font-family: inherit;
   margin: 1.3em auto;
+  margin-right: 0.7em;
 }
 input::placeholder {
   color: rgb(188, 181, 181);
@@ -734,12 +743,12 @@ input::placeholder {
 /* Botón Sign in */
 #form .input-login button {
   background-color: var(--yellowHack);
-  padding: 1.2em 2.3em;
+  padding: 1.2em 1.5em;
   color: var(--white);
   font-size: 1rem;
-  width: 30%;
+  width: 20%;
   font-weight: bold;
-  margin-left: 8%;
+  margin: 1em 2.5em;
 }
 
 #rememberme {
@@ -748,14 +757,12 @@ input::placeholder {
   float: left;
   color: grey;
   font-size: 1.1rem;
-  margin-top: 1em;
-  margin-bottom: 1.2em;
-  margin-left: 1rem;
-
 }
 #rememberme > label {
   display: flex;
   width: 30%;
+  align-items: center;
+  margin-left: 0.3em;
 }
 #rememberme > label > input {
   display: flex;
@@ -790,6 +797,41 @@ input::placeholder {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 70%;
+  }
+  #rememberme {
+    display: flex;
+    float: left;
+    color: grey;
+    font-size: 1.1rem;
+  }
+  #rememberme > input[type=checkbox] {
+    margin-left: 2.5em !important;
+  }
+  #rememberme > label {
+    display: flex;
+    width: 30%;
+    align-items: center;
+  }
+  #rememberme > label > input {
+    display: flex;
+    width: 100% !important;
+  }
+  form .input-login button {
+    background-color: var(--yellowHack);
+    padding: 1.2em 1.5em;
+    color: var(--white);
+    font-size: 1rem;
+    width: 20%;
+    font-weight: bold;
+    margin: 1em 2.5em;
+  }
+  #password-account {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 2.5em;
+    padding: 1.5em 0;
   }
 }
 
@@ -842,7 +884,8 @@ font-family: 'Titillium Web', sans-serif; */
 .gamers-p {
   margin-top: 1em;
   font-family: "Poppins", sans-serif;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  font-size: 16px;
   width: 100%;
   color: var(--grey);
 }
@@ -852,6 +895,7 @@ font-family: 'Titillium Web', sans-serif; */
   display: inline-block;
   text-align: center;
   overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 
 .gamers-player1-h3 {
@@ -865,7 +909,6 @@ font-family: 'Titillium Web', sans-serif; */
   /* left: 50%; */
   /* transform: translate(-50%, -70%); */
   transition: all 0.3s ease;
-
   font-family: "Titillium Web", sans-serif;
   font-size: 1.3em;
   color: var(--dark);
@@ -951,7 +994,7 @@ font-family: 'Titillium Web', sans-serif; */
     margin: 2% 2.5% 2% 2.5%;
   }
   .gamers-p {
-    font-size: 1em;
+    font-size: 16px;
   }
   /*---------------------Imagenes*/
   .gamers-cont {
@@ -983,8 +1026,8 @@ font-family: 'Titillium Web', sans-serif; */
     max-width: 1440px;
   }
   .gamers-p {
-    font-size: 1em;
-    margin-left: 2em;
+    font-size: 16px;
+    padding-left: 2em;
   }
   /*---------------------Imagenes*/
   .gamers-cont {
@@ -1005,7 +1048,7 @@ font-family: 'Titillium Web', sans-serif; */
     margin-left: 2%;
   }
   .gamers-h2 {
-    margin-left: .5em;
+    margin-left: 0.5em;
   }
   .gamers-player1-h3 {
     font-size: 1.5em;
@@ -1032,7 +1075,7 @@ font-family: 'Titillium Web', sans-serif; */
   color: var(--black);
   font-size: 2.5em;
   margin-top: 1em;
-  font-family: 'titillium web', sans-serif;
+  font-family: "titillium web", sans-serif;
 }
 
 #games-color {
@@ -1040,21 +1083,22 @@ font-family: 'Titillium Web', sans-serif; */
 }
 
 #p-title {
-  font-family: Poppins, sans-serif;
+  font-family: "Poppins", sans-serif;
   color: var(--grey);
   width: 100vw;
+  font-size: 16px;
 }
 
 #cards {
-  margin-left: 1.5em;
-  margin-right: 1em;
+  /* margin-left: 1.5em;
+  margin-right: 1em; */
   max-width: 1440px;
   width: 90%;
   margin: 0 auto;
 }
 
 #game-card {
-  margin-top: 2em;
+  margin-top: 1.5em;
   justify-content: space-around;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -1081,10 +1125,11 @@ span.icon {
 
 span.fa-text {
   font-size: 0.8em;
-  font-weight: 900;
+  font-weight: 400;
   color: var(--grey);
   font-family: Poppins, sans-serif;
   cursor: pointer;
+  padding-right: 0.2em;
 }
 
 span.fa-text:hover {
@@ -1111,8 +1156,17 @@ span.fa-text:hover {
   #cards {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 1.6em;
-    width: 100%;
+    justify-content: space-evenly;
+    width: 95%;
+    margin: 1% 2.5% 2% 2%;
+  }
+  #h3-title {
+    margin-left: -0.2em;
+  }
+  #p-title {
+    width: 94.5vw;
+    margin-left: -0.5em;
+    margin-bottom: -0.5em;
   }
   #game-card {
     width: 30%;
@@ -1153,9 +1207,10 @@ span.fa-text:hover {
   align-items: center;
   font-size: 1.2rem;
   margin-top: 2em;
-  padding: 0.5rem;
+  padding-bottom: 2em;
 }
 #footer > h2 {
+  padding-top: 1.5em;
   font-family: "Titillium Web", sans-serif;
 }
 #footer > h3 {
@@ -1177,7 +1232,7 @@ span.fa-text:hover {
 
 @media (min-width: 768px) {
   #footer {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 }
 
