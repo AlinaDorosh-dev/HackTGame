@@ -191,7 +191,7 @@ header
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   header > div > div > nav.main-nav {
-    height: 10em;
+    height: 9em;
     position: fixed;
     align-content: space-between;
     flex-direction: column;
@@ -200,7 +200,7 @@ header
     background-color: transparent;
   }
   header > div > div > nav > h3 {
-    margin-left: 1em;
+    margin-left: 2em;
     font-size: 1.8em;
     font-family: "Titillium Web", sans-serif;
     color: var(--white);
@@ -225,7 +225,9 @@ header
   }
   header > div > div > nav > div.main-menu {
     position: fixed;
-    width: 50%;
+    margin-top: -1em;
+    margin-right: 2em;
+    width: 40%;
     height: 10em;
     display: flex;
     flex-direction: column-reverse;
@@ -248,19 +250,26 @@ header
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
-    margin-left: 2em;
     margin-bottom: -1em;
+    margin-left: 2em;
   }
 
   header > div > div > nav.main-nav > div.main-menu > ul.icons-menu > li {
     list-style: none;
-    margin: 2em 1em 0;
+    display: flex;
+    width: 0;
+    padding-right: 0.25em;
+    justify-content: space-around;
+    flex-direction: row;
   }
+  /* div > div > nav.main-nav > div.main-menu > .icons-menu > li > a {
+    margin-right: 4em;
+  } */
   header > div > div > nav.main-nav > div.main-menu > ul.icons-menu > li > a {
     text-decoration: none;
     color: var(--white);
     text-shadow: 2px 2px 4px #343131;
-    font-size: 1.5em;
+    font-size: 1.25em;
     margin-right: 0;
   }
   header
@@ -289,7 +298,7 @@ header
     text-decoration: none;
     color: var(--white);
     text-shadow: 2px 2px 4px #343131;
-    font-size: 1.1em;
+    font-size: 0.875em;
   }
   header
     > div
@@ -306,12 +315,14 @@ header
     flex-direction: row;
     justify-content: flex-end;
     align-content: center;
+    width: 60%;
     padding-right: 2.5em;
   }
   header > div > div > nav.main-nav > div.main-menu > ul > div > .btn-menu {
     background-color: var(--yellowHack);
     width: 35%;
-    padding: 0.8em 0;
+    font-size: 0.785em;
+    padding: 0.785em 0;
     color: var(--white);
   }
   header
@@ -543,7 +554,10 @@ header #myModalSignUp .modal-content .paragraph {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   #gallery .text-on-image h1 {
-    font-size: 3.7rem;
+    font-size: 2.785rem;
+  }
+  #gallery .text-on-image p {
+    font-size: 1rem;
   }
 
   #gallery .text-on-image {
@@ -715,6 +729,39 @@ header #myModalSignUp .modal-content .paragraph {
     /* margin: 10% 3% 0 3%; */
   }
 }
+@media (min-width: 768px) {
+  #contact {
+    display: flex;
+    align-items: flex-start;
+  }
+  #contact .contact-inputs {
+    display: inline-block;
+    width: 60%;
+  }
+  #contact .contact-row {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+  #contact .contact-info {
+    width: 35%;
+    /* margin: 10% 2% 0 2%; */
+    display: inline-block;
+    align-items: left;
+    color: var(--grey);
+  }
+  /*-----------------------INPUTS*/
+  #contact .inputs-email {
+    float: right;
+  }
+  #contact .inputs-subject {
+    float: right;
+  }
+  /*-----------------------INFO-----------------*/
+  #contact .contact-info {
+    /* margin: 10% 3% 0 3%; */
+  }
+}
 
 /* CSS login form */
 #form {
@@ -841,6 +888,30 @@ input::placeholder {
     max-width: 100%;
     margin: 0 2.5em;
     padding: 1.5em 0;
+  }
+}
+@media (min-width: 992px) {
+  .textinputs {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #rememberme {
+    display: flex;
+    float: left;
+    color: grey;
+    font-size: 1.1rem;
+  }
+  #rememberme > input[type="checkbox"] {
+    margin-left: 2.5em !important;
+  }
+  #rememberme > label {
+    display: flex;
+    width: 20%;
+    align-items: center;
+  }
+  #rememberme > label > input {
+    display: flex;
+    width: 100% !important;
   }
 }
 
@@ -1051,8 +1122,11 @@ font-family: 'Titillium Web', sans-serif; */
     max-width: 1440px;
   }
   .gamers-p {
-    font-size: 16px;
-    padding-left: 2em;
+    font-size: 14px;
+    padding-left: 1.5em;
+  }
+  .gamers-h2 {
+    font-size: 3em;
   }
   /*---------------------Imagenes*/
   .gamers-cont {
@@ -1076,7 +1150,7 @@ font-family: 'Titillium Web', sans-serif; */
     margin-left: 0.5em;
   }
   .gamers-player1-h3 {
-    font-size: 1.5em;
+    font-size: 1.375em;
   }
 }
 
@@ -1194,6 +1268,8 @@ span.fa-text:hover {
   }
   #h3-title {
     margin-left: -0.2em;
+    margin-bottom: -0.1em;
+    font-size: 2.8em;
   }
   #p-title {
     width: 94.5vw;
@@ -1228,13 +1304,24 @@ span.fa-text:hover {
     margin: 0 auto;
     padding-bottom: 3%;
   }
+  #h3-title {
+    font-size: 42px;
+  }
+  #h2-card {
+    font-size: 1.3em;
+  }
+  #p-card {
+    font-size: 0.875em;
+  }
+  span.fa-text {
+    font-size: 0.685em;
 }
 
 /* CSS Benjamin */
 
 #footer {
   width: 100%;
-  background-color: var(--black);
+  background-color: #070707;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1272,6 +1359,13 @@ span.fa-text:hover {
 
 @media (min-width: 992px) {
   #footer {
-    font-size: 1.7rem;
+    width: 100%;
+    background-color: #070707;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.875rem;
+    margin-top: -5em;
   }
+
 }

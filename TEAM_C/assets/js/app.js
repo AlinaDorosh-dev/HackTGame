@@ -29,8 +29,8 @@ window.addEventListener("load", () => {
       title.style.top = "0px";
       mainMenu.style.top = "0px";
     } else {
-      title.style.top = "-10rem";
-      mainMenu.style.top = "-10rem";
+      title.style.top = "-9rem";
+      mainMenu.style.top = "-9rem";
     }
     ubicationMain = ubicationNow;
   });
