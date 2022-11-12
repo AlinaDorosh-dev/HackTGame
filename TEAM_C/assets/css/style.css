@@ -692,7 +692,7 @@ header #myModalSignUp .modal-content .paragraph {
   #contact .contact-inputs {
     display: inline-block;
   }
-  #contact .contact-row{
+  #contact .contact-row {
     display: flex;
     align-items: center;
     margin: 0 auto;
@@ -726,7 +726,7 @@ header #myModalSignUp .modal-content .paragraph {
   font-family: "Titillium Web", sans-serif;
   text-align: center;
   font-size: 3rem;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   color: var(--dark);
 }
 
@@ -763,7 +763,7 @@ input::placeholder {
   color: grey;
   font-size: 1.1rem;
 }
-#rememberme > input[type=checkbox] {
+#rememberme > input[type="checkbox"] {
   margin-left: 2em !important;
 }
 #rememberme > label {
@@ -814,7 +814,7 @@ input::placeholder {
     color: grey;
     font-size: 1.1rem;
   }
-  #rememberme > input[type=checkbox] {
+  #rememberme > input[type="checkbox"] {
     margin-left: 2.5em !important;
   }
   #rememberme > label {
@@ -901,7 +901,7 @@ font-family: 'Titillium Web', sans-serif; */
 /*--------------------------Imagenes*/
 .gamers-player1 {
   width: 99%;
-  height:100%;
+  height: 100%;
   position: relative;
   display: inline-block;
   text-align: center;
@@ -1009,6 +1009,18 @@ font-family: 'Titillium Web', sans-serif; */
   .gamers-p {
     font-size: 16px;
   }
+  .gamers-h2 {
+    font-size: 3.5em;
+  }
+  h4 {
+    font-size: 1.1em;
+  }
+  .gamers-player1-h3 div {
+    width: 9em;
+    padding: 15px 40px;
+    margin: 0 auto;
+    background-color: var(--yellow);
+  }
   /*---------------------Imagenes*/
   .gamers-cont {
     display: flex;
@@ -1086,7 +1098,7 @@ font-family: 'Titillium Web', sans-serif; */
 
 #h3-title {
   color: var(--black);
-  margin-top: -.5em;
+  margin-top: -0.5em;
   font-size: 3em;
   font-family: "titillium web", sans-serif;
 }
@@ -1175,6 +1187,7 @@ span.fa-text:hover {
   #cards {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-evenly;
     width: 95%;
     margin: 1% 2.5% 2% 2%;
@@ -1185,7 +1198,8 @@ span.fa-text:hover {
   #p-title {
     width: 94.5vw;
     margin-left: -0.5em;
-    margin-bottom: -0.5em;
+    margin-bottom: 1em;
+    font-size: 0.875em;
   }
   #game-card {
     width: 30%;
@@ -1252,6 +1266,7 @@ span.fa-text:hover {
 @media (min-width: 768px) {
   #footer {
     font-size: 1.1rem;
+    margin-top: -2em;
   }
 }
 
