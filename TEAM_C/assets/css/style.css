@@ -183,10 +183,7 @@ header
     list-style: none;
     margin: 0.5em 1em 0;
   }
-  /* header > div > div > nav.main-nav {
-    width: 100vw;
-  } */
-}
+  }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -262,9 +259,7 @@ header
     justify-content: space-around;
     flex-direction: row;
   }
-  /* div > div > nav.main-nav > div.main-menu > .icons-menu > li > a {
-    margin-right: 4em;
-  } */
+ 
   header > div > div > nav.main-nav > div.main-menu > ul.icons-menu > li > a {
     text-decoration: none;
     color: var(--white);
@@ -369,8 +364,7 @@ header
   min-width: 100vw;
   max-width: 1440px;
   height: 100vh;
-  transition: all 0.3s ease-in-out;
-}
+  }
 
 #gallery .dots-container {
   position: absolute;
@@ -400,8 +394,9 @@ header
   border-radius: 100%;
 }
 
-#gallery .flashit {
-  animation: flash linear 1s;
+ #gallery .flashit {
+  animation: flash linear .6s;
+  animation-delay: .25s;
 }
 @keyframes flash {
   0% {
@@ -413,7 +408,7 @@ header
   100% {
     opacity: 1;
   }
-}
+} 
 
 /* Centered text */
 #gallery .text-on-image {
@@ -530,12 +525,10 @@ header #myModalSignUp .modal-content .paragraph {
   cursor: pointer;
 }
 
-/* Small devices (landscape phones, 576px and up) */
-/* @media (min-width: 576px) {
-} */
+
 
 /*-----------------------------------------RESPONSIVE------------------------------------*/
-/* Bootstrap breakpoints */
+
 
 /*----------------------TABLET----------------------------*/
 /* Medium devices (tablets, 768px and up) */
@@ -547,7 +540,7 @@ header #myModalSignUp .modal-content .paragraph {
     font-size: 1.2rem;
   }
   #gallery .text-on-image h1 {
-    font-size: 3.5rem;
+    font-size: 2.785rem;
   }
 }
 /*-------------------------PC-------------------------------------*/
@@ -557,7 +550,7 @@ header #myModalSignUp .modal-content .paragraph {
     font-size: 2.785rem;
   }
   #gallery .text-on-image p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   #gallery .text-on-image {
@@ -583,11 +576,11 @@ header #myModalSignUp .modal-content .paragraph {
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   #gallery .text-on-image h1 {
-    font-size: 5rem;
+    font-size: 3.8rem;
   }
   #gallery .text-on-image p {
     font-size: 1.2rem;
-    line-height: 2.5rem;
+    line-height: 1.7rem;
   }
 
   #gallery .text-on-image {
@@ -725,9 +718,6 @@ header #myModalSignUp .modal-content .paragraph {
     float: right;
   }
   /*-----------------------INFO-----------------*/
-  #contact .contact-info {
-    /* margin: 10% 3% 0 3%; */
-  }
 }
 @media (min-width: 768px) {
   #contact {
@@ -758,9 +748,6 @@ header #myModalSignUp .modal-content .paragraph {
     float: right;
   }
   /*-----------------------INFO-----------------*/
-  #contact .contact-info {
-    /* margin: 10% 3% 0 3%; */
-  }
 }
 
 /* CSS login form */
@@ -915,39 +902,11 @@ input::placeholder {
   }
 }
 
+
 /* CSS ISMAEL  GAMERS*/
 /* font-family: 'Poppins', sans-serif;
 font-family: 'Titillium Web', sans-serif; */
 
-:root {
-  font-size: 0.875rem;
-  font-family: "Poppins", sans-serif;
-  --blue: #0d6efd;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #d63384;
-  --red: #dc3545;
-  --orange: #fd7e14;
-  --yellow: #ffc107;
-  --green: #198754;
-  --teal: #20c997;
-  --cyan: #0dcaf0;
-  --dark: #292a2b;
-  --black: #000;
-  --white: #fff;
-  --grey: #929292;
-  box-sizing: border-box;
-}
-
-*,
-::before,
-::after {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  box-sizing: inherit;
-  outline: 0 none;
-}
 #gamers {
   margin: 5%;
 }
@@ -995,8 +954,6 @@ font-family: 'Titillium Web', sans-serif; */
   flex-wrap: wrap;
   align-items: center;
   margin: 0 auto;
-  /* left: 50%; */
-  /* transform: translate(-50%, -70%); */
   transition: all 0.3s ease;
   font-family: "Titillium Web", sans-serif;
   font-size: 1.3em;
@@ -1068,9 +1025,7 @@ font-family: 'Titillium Web', sans-serif; */
 
 /*-----------------------------------------RESPONSIVE------------------------------------*/
 /* Bootstrap breakpoints */
-/* Small devices (landscape phones, 390px and up) */
-@media (min-width: 390px) {
-}
+
 /*----------------------TABLET----------------------------*/
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -1153,17 +1108,6 @@ font-family: 'Titillium Web', sans-serif; */
     font-size: 1.375em;
   }
 }
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  /* here your code */
-}
-
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-  /* here your code */
-}
-
 /* CSS DANI Y DAVID */
 #cards-header {
   width: 90%;
@@ -1315,6 +1259,7 @@ span.fa-text:hover {
   }
   span.fa-text {
     font-size: 0.685em;
+  }
 }
 
 /* CSS Benjamin */
@@ -1361,11 +1306,10 @@ span.fa-text:hover {
   #footer {
     width: 100%;
     background-color: #070707;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 0.875rem;
     margin-top: -5em;
   }
-
 }
