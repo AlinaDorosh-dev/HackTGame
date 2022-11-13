@@ -841,7 +841,14 @@ input::placeholder {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 70%;
+    max-width: 650px;
   }
+
+  #form form input:nth-child(1),
+input:nth-child(2) {
+  width: 90%;
+ 
+}
   #rememberme {
     display: flex;
     float: left;
