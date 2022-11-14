@@ -362,7 +362,7 @@ header
   text-align: center;
   color: white;
   min-width: 100vw;
-  max-width: 1440px;
+  
   height: 100vh;
   }
 
@@ -658,7 +658,13 @@ header #myModalSignUp .modal-content .paragraph {
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   margin-left: 0;
+  cursor: pointer;
 }
+
+#contact .inputs-button:hover{
+  color: var(--dark);
+}
+
 /*-----------------------INFO-----------------*/
 #contact .contact-info-emojis-p {
   margin: 2em 0;
@@ -788,6 +794,10 @@ input::placeholder {
   width: 30%;
   font-weight: bold;
   margin: 1em 2.5em;
+  cursor: pointer;
+}
+#form .input-login button:hover{
+  color: var(--dark);
 }
 
 #rememberme {
@@ -1119,6 +1129,7 @@ font-family: 'Titillium Web', sans-serif; */
 #cards-header {
   width: 90%;
   margin-left: 2em;
+  max-width: 1440px;
 }
 
 #h3-title {
@@ -1126,6 +1137,7 @@ font-family: 'Titillium Web', sans-serif; */
   margin-top: -0.5em;
   font-size: 3em;
   font-family: "titillium web", sans-serif;
+  max-width: 1440px;
 }
 
 #games-color {
@@ -1139,6 +1151,7 @@ font-family: 'Titillium Web', sans-serif; */
   line-height: 1.5em;
   font-size: 14px;
   margin-bottom: 2em;
+  max-width: 1440px;
 }
 
 #cards {
